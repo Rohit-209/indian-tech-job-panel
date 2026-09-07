@@ -20,6 +20,14 @@ import hashlib
 import re
 from dataclasses import dataclass
 from datetime import date, datetime, timezone
+from zoneinfo import ZoneInfo
+
+# All observed_on dates are IST calendar days. Every runtime (local Mac, GH
+# Actions runner, someone's Docker container) resolves to the same date given
+# the same wall clock. This matters because observations is keyed on
+# (posting_key, observed_on) — if two runs disagree on "today" we either
+# duplicate observations or silently drop the second one.
+IST = ZoneInfo("Asia/Kolkata")
 
 import psycopg
 import structlog
@@ -126,7 +134,7 @@ def upsert_source(
     Runs in a single transaction per source so a mid-run crash leaves nothing
     half-applied.
     """
-    observed_on = observed_on or date.today()
+    observed_on = observed_on or datetime.now(IST).date()
     started_at = datetime.now(timezone.utc)
     summary = RunSummary(source=source, started_at=started_at, rows_fetched=len(postings))
 
