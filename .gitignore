@@ -1,0 +1,22 @@
+.env
+.env.local
+*.pyc
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+report/figures/*.png
+report/figures/*.pdf
+!report/figures/.gitkeep
+data/tokens.private.yaml
+*.sqlite
+*.duckdb
+*.egg-info/
+build/
+dist/
+
+# Keep the plan out of the public repo
+Job Market Panel - Build and Analysis Plan.pdf

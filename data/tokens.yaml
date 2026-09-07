@@ -1,0 +1,55 @@
+# ATS company tokens the collector will hit each day.
+#
+# How to add a company:
+#   Greenhouse: check https://boards-api.greenhouse.io/v1/boards/{token}/jobs
+#   Lever:      check https://api.lever.co/v0/postings/{token}?mode=json
+#   Ashby:      check https://api.ashbyhq.com/posting-api/job-board/{token}
+#
+# Probe first with: python -m tools.probe_tokens
+# Broken/stale tokens return 404 and pollute the log.
+#
+# EXPANSION LOG:
+#   2026-09-07 seed: 68 tokens probed, 27 working, ~330 India postings.
+#     Cut Lever entirely (0/17 worked — need real research).
+#     Cut most India-HQ guesses (Razorpay, Meesho, CRED, etc. — slugs unknown).
+#   TODO: Find real slugs for Indian tech companies.
+#         Add ~20 more India-hiring globals (Adobe, Salesforce, Autodesk, ...).
+#         Investigate why Lever API returns 404 on every guess.
+
+greenhouse:
+  # India-HQ tech (confirmed working)
+  - postman        # 4 India postings from 63 total
+
+  # India-hiring globals (confirmed working, ranked by India yield)
+  - okta           # 98 India / 313 total
+  - mongodb        # 66 India / 415 total
+  - gitlab         # 43 India / 229 total
+  - stripe         # 40 India / 616 total
+  - elastic        # 19 India / 365 total
+  - twilio         # 15 India / 147 total
+  - airbnb         # 10 India / 167 total
+  - datadog        # 7 India / 441 total
+  - cloudflare     # 2 India / 331 total
+  # Kept even at 0-India yield because they may open India roles mid-window
+  - dropbox        # 0 India / 42 total
+  - hubspot        # 0 India / 0 total (empty board day 1 — may fill later)
+
+lever:
+  # None currently. Need to find real Lever tokens for Indian companies.
+  # Historical guesses (swiggy, dream11, phonepe, ...) all 404'd.
+
+ashby:
+  # AI-first startups. Low India yield but capture the AI hiring segment.
+  - openai         # 10 India / 780 total
+  - cursor         # 6 India / 124 total
+  - deepgram       # 2 India / 92 total
+  # Kept for coverage even at 0-India — likely to open India roles
+  - ramp
+  - linear
+  - posthog
+  - supabase
+  - pinecone
+  - modal
+  - perplexity
+  - langchain
+  - warp
