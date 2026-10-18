@@ -1,0 +1,719 @@
+{
+  "tag": "all_in_scope",
+  "seed": 20261018,
+  "n_before_dedupe": 270,
+  "n": 213,
+  "n_features": 108,
+  "k": 5,
+  "gap_rule_k": null,
+  "curves": [
+    {
+      "k": 2,
+      "silhouette": 0.0936,
+      "null_sil_mean": 0.0291,
+      "null_sil_sd": 0.0025,
+      "null_sil_p": 0.0196,
+      "gap": 0.0345,
+      "gap_s": 0.0014,
+      "sil_excess_z": 26.1072,
+      "ari_mean": 0.4459,
+      "ari_lo": 0.1679,
+      "ari_hi": 0.9117,
+      "n_stable_clusters": 1
+    },
+    {
+      "k": 3,
+      "silhouette": 0.099,
+      "null_sil_mean": 0.0259,
+      "null_sil_sd": 0.0023,
+      "null_sil_p": 0.0196,
+      "gap": 0.0639,
+      "gap_s": 0.0018,
+      "sil_excess_z": 31.9198,
+      "ari_mean": 0.386,
+      "ari_lo": 0.1653,
+      "ari_hi": 0.7513,
+      "n_stable_clusters": 0
+    },
+    {
+      "k": 4,
+      "silhouette": 0.1154,
+      "null_sil_mean": 0.0259,
+      "null_sil_sd": 0.0026,
+      "null_sil_p": 0.0196,
+      "gap": 0.0943,
+      "gap_s": 0.0024,
+      "sil_excess_z": 34.8727,
+      "ari_mean": 0.4776,
+      "ari_lo": 0.2926,
+      "ari_hi": 0.8029,
+      "n_stable_clusters": 0
+    },
+    {
+      "k": 5,
+      "silhouette": 0.1265,
+      "null_sil_mean": 0.0257,
+      "null_sil_sd": 0.0029,
+      "null_sil_p": 0.0196,
+      "gap": 0.1208,
+      "gap_s": 0.0025,
+      "sil_excess_z": 34.3339,
+      "ari_mean": 0.5062,
+      "ari_lo": 0.3045,
+      "ari_hi": 0.7144,
+      "n_stable_clusters": 0
+    },
+    {
+      "k": 6,
+      "silhouette": 0.1309,
+      "null_sil_mean": 0.0258,
+      "null_sil_sd": 0.0028,
+      "null_sil_p": 0.0196,
+      "gap": 0.1363,
+      "gap_s": 0.0028,
+      "sil_excess_z": 37.1687,
+      "ari_mean": 0.4966,
+      "ari_lo": 0.3107,
+      "ari_hi": 0.702,
+      "n_stable_clusters": 1
+    },
+    {
+      "k": 7,
+      "silhouette": 0.1358,
+      "null_sil_mean": 0.025,
+      "null_sil_sd": 0.003,
+      "null_sil_p": 0.0196,
+      "gap": 0.149,
+      "gap_s": 0.0029,
+      "sil_excess_z": 36.8186,
+      "ari_mean": 0.4536,
+      "ari_lo": 0.2819,
+      "ari_hi": 0.5971,
+      "n_stable_clusters": 0
+    },
+    {
+      "k": 8,
+      "silhouette": 0.1401,
+      "null_sil_mean": 0.0252,
+      "null_sil_sd": 0.0029,
+      "null_sil_p": 0.0196,
+      "gap": 0.1648,
+      "gap_s": 0.003,
+      "sil_excess_z": 39.3126,
+      "ari_mean": 0.4899,
+      "ari_lo": 0.3816,
+      "ari_hi": 0.6272,
+      "n_stable_clusters": 1
+    },
+    {
+      "k": 9,
+      "silhouette": 0.1366,
+      "null_sil_mean": 0.0248,
+      "null_sil_sd": 0.0031,
+      "null_sil_p": 0.0196,
+      "gap": 0.1714,
+      "gap_s": 0.003,
+      "sil_excess_z": 36.5701,
+      "ari_mean": 0.4431,
+      "ari_lo": 0.3358,
+      "ari_hi": 0.5562,
+      "n_stable_clusters": 0
+    },
+    {
+      "k": 10,
+      "silhouette": 0.1517,
+      "null_sil_mean": 0.0252,
+      "null_sil_sd": 0.0032,
+      "null_sil_p": 0.0196,
+      "gap": 0.1892,
+      "gap_s": 0.0039,
+      "sil_excess_z": 39.9634,
+      "ari_mean": 0.4513,
+      "ari_lo": 0.3608,
+      "ari_hi": 0.562,
+      "n_stable_clusters": 1
+    }
+  ],
+  "stability": [
+    {
+      "scheme": "bootstrap",
+      "n": 100,
+      "ari_mean": 0.4863903090802409,
+      "ari_ci": [
+        0.3028684896535527,
+        0.6500414594810223
+      ],
+      "jaccard_by_cluster": [
+        0.6921316677027395,
+        0.6748397302885099,
+        0.4796812856528876,
+        0.5129568376867225,
+        0.7500972814552723
+      ]
+    },
+    {
+      "scheme": "company_cap",
+      "n": 100,
+      "ari_mean": 0.4494784698338124,
+      "ari_ci": [
+        0.27776066930319254,
+        0.6244737424440482
+      ],
+      "jaccard_by_cluster": [
+        0.6846301847818965,
+        0.5862325314962256,
+        0.4461323168977701,
+        0.3402350820951183,
+        0.7306055576492276
+      ]
+    }
+  ],
+  "cramers_v": {
+    "company": 0.4609315096063281,
+    "seniority": 0.24378560863212972,
+    "title_family": 0.49460623189463354
+  },
+  "clusters": [
+    {
+      "cluster": 0,
+      "n": 30,
+      "signature": [
+        {
+          "skill": "statistics",
+          "prevalence": 0.33,
+          "lift": 7.1
+        },
+        {
+          "skill": "dbt",
+          "prevalence": 0.33,
+          "lift": 7.1
+        },
+        {
+          "skill": "tableau",
+          "prevalence": 0.53,
+          "lift": 6.68
+        },
+        {
+          "skill": "snowflake",
+          "prevalence": 0.33,
+          "lift": 5.07
+        },
+        {
+          "skill": "spark",
+          "prevalence": 0.3,
+          "lift": 4.56
+        },
+        {
+          "skill": "etl",
+          "prevalence": 0.5,
+          "lift": 4.1
+        },
+        {
+          "skill": "data_warehouse",
+          "prevalence": 0.43,
+          "lift": 3.85
+        },
+        {
+          "skill": "sql",
+          "prevalence": 0.73,
+          "lift": 3.63
+        }
+      ],
+      "top_company_share": {
+        "Okta": 0.3,
+        "Airbnb": 0.2,
+        "Stripe": 0.17
+      },
+      "title_family": {
+        "data_analytics": 17,
+        "software_engineering": 8,
+        "data_engineering": 4,
+        "ml_engineering": 1
+      },
+      "seniority": {
+        "senior": 18,
+        "staff": 7,
+        "unspecified": 4,
+        "principal": 1
+      },
+      "example_titles": [
+        "Senior Analyst, People Analytics",
+        "Senior Data Analyst",
+        "Senior Data Analyst (Auth0)",
+        "Senior Data Analyst, Field Analytics",
+        "Senior Data Engineer",
+        "Senior Sales Compensation Engineer"
+      ]
+    },
+    {
+      "cluster": 1,
+      "n": 47,
+      "signature": [
+        {
+          "skill": "networking",
+          "prevalence": 0.4,
+          "lift": 4.53
+        },
+        {
+          "skill": "go",
+          "prevalence": 0.87,
+          "lift": 2.73
+        },
+        {
+          "skill": "terraform",
+          "prevalence": 0.55,
+          "lift": 2.56
+        },
+        {
+          "skill": "kubernetes",
+          "prevalence": 0.87,
+          "lift": 2.41
+        },
+        {
+          "skill": "gcp",
+          "prevalence": 0.53,
+          "lift": 2.41
+        },
+        {
+          "skill": "azure",
+          "prevalence": 0.38,
+          "lift": 2.27
+        },
+        {
+          "skill": "aws",
+          "prevalence": 0.87,
+          "lift": 2.02
+        },
+        {
+          "skill": "docker",
+          "prevalence": 0.49,
+          "lift": 1.9
+        }
+      ],
+      "top_company_share": {
+        "Okta": 0.53,
+        "Mongodb": 0.23,
+        "Twilio": 0.09
+      },
+      "title_family": {
+        "software_engineering": 22,
+        "sre_infra": 20,
+        "qa_testing": 3,
+        "security_engineering": 2
+      },
+      "seniority": {
+        "senior": 19,
+        "staff": 19,
+        "unspecified": 5,
+        "principal": 3,
+        "mid": 1
+      },
+      "example_titles": [
+        "Software Engineer 3",
+        "Principal Site Reliability Engineer",
+        "Senior Site Reliability Engineer",
+        "Senior  Software Engineer",
+        "Senior Software Engineer",
+        "Senior Software Engineer in Test"
+      ]
+    },
+    {
+      "cluster": 2,
+      "n": 43,
+      "signature": [
+        {
+          "skill": "genai",
+          "prevalence": 0.33,
+          "lift": 3.47
+        },
+        {
+          "skill": "salesforce",
+          "prevalence": 0.44,
+          "lift": 3.25
+        },
+        {
+          "skill": "ai_agents",
+          "prevalence": 0.72,
+          "lift": 2.74
+        },
+        {
+          "skill": "llm",
+          "prevalence": 0.56,
+          "lift": 2.64
+        },
+        {
+          "skill": "javascript",
+          "prevalence": 0.56,
+          "lift": 2.05
+        },
+        {
+          "skill": "typescript",
+          "prevalence": 0.44,
+          "lift": 2.0
+        },
+        {
+          "skill": "rest",
+          "prevalence": 0.44,
+          "lift": 1.88
+        },
+        {
+          "skill": "ci_cd",
+          "prevalence": 0.65,
+          "lift": 1.54
+        }
+      ],
+      "top_company_share": {
+        "Okta": 0.35,
+        "Mongodb": 0.26,
+        "Gitlab": 0.12
+      },
+      "title_family": {
+        "software_engineering": 30,
+        "ml_engineering": 6,
+        "sre_infra": 3,
+        "qa_testing": 2,
+        "data_analytics": 1,
+        "security_engineering": 1
+      },
+      "seniority": {
+        "senior": 19,
+        "unspecified": 13,
+        "staff": 9,
+        "principal": 1,
+        "mid": 1
+      },
+      "example_titles": [
+        "Salesforce CPQ engineer 3",
+        "Staff Engineer",
+        "Principal Software Engineer",
+        "Senior Product Analyst - Finance Technology",
+        "Senior Software Engineer",
+        "Senior Software engineer - Advanced Threat Protection"
+      ]
+    },
+    {
+      "cluster": 3,
+      "n": 67,
+      "signature": [
+        {
+          "skill": "react",
+          "prevalence": 0.51,
+          "lift": 2.25
+        },
+        {
+          "skill": "java",
+          "prevalence": 0.73,
+          "lift": 1.95
+        },
+        {
+          "skill": "identity",
+          "prevalence": 0.58,
+          "lift": 1.91
+        },
+        {
+          "skill": "typescript",
+          "prevalence": 0.37,
+          "lift": 1.69
+        },
+        {
+          "skill": "code_review",
+          "prevalence": 0.6,
+          "lift": 1.61
+        },
+        {
+          "skill": "rest",
+          "prevalence": 0.36,
+          "lift": 1.53
+        },
+        {
+          "skill": "javascript",
+          "prevalence": 0.4,
+          "lift": 1.48
+        },
+        {
+          "skill": "postgresql",
+          "prevalence": 0.31,
+          "lift": 1.42
+        }
+      ],
+      "top_company_share": {
+        "Okta": 0.78,
+        "Twilio": 0.07,
+        "Mongodb": 0.06
+      },
+      "title_family": {
+        "software_engineering": 61,
+        "qa_testing": 4,
+        "sre_infra": 2
+      },
+      "seniority": {
+        "staff": 27,
+        "senior": 24,
+        "principal": 11,
+        "unspecified": 4,
+        "mid": 1
+      },
+      "example_titles": [
+        "Senior Software Engineer (Android)",
+        "Principal Software Engineer",
+        "Principal Software Engineer - macOS",
+        "Principal UI Software Engineer",
+        "Senior Fullstack Engineer (Java Heavy)",
+        "Senior Fullstack Engineer (Java + React.js)"
+      ]
+    },
+    {
+      "cluster": 4,
+      "n": 26,
+      "signature": [
+        {
+          "skill": "rails",
+          "prevalence": 0.69,
+          "lift": 8.19
+        },
+        {
+          "skill": "ruby",
+          "prevalence": 0.92,
+          "lift": 5.96
+        },
+        {
+          "skill": "event_driven",
+          "prevalence": 0.35,
+          "lift": 2.63
+        },
+        {
+          "skill": "postgresql",
+          "prevalence": 0.42,
+          "lift": 1.92
+        },
+        {
+          "skill": "code_review",
+          "prevalence": 0.62,
+          "lift": 1.66
+        },
+        {
+          "skill": "observability",
+          "prevalence": 0.62,
+          "lift": 1.66
+        },
+        {
+          "skill": "sre",
+          "prevalence": 0.54,
+          "lift": 1.62
+        },
+        {
+          "skill": "go",
+          "prevalence": 0.46,
+          "lift": 1.45
+        }
+      ],
+      "top_company_share": {
+        "Gitlab": 0.81,
+        "Mongodb": 0.08,
+        "Stripe": 0.04
+      },
+      "title_family": {
+        "software_engineering": 23,
+        "sre_infra": 2,
+        "security_engineering": 1
+      },
+      "seniority": {
+        "senior": 10,
+        "staff": 9,
+        "mid": 5,
+        "unspecified": 1,
+        "principal": 1
+      },
+      "example_titles": [
+        "Senior Engineer - Business Systems (Integrations)",
+        "Staff Engineer - Business Systems (Integrations)",
+        "Intermediate Backend Engineer - Code Security",
+        "Intermediate Backend Engineer, India",
+        "Senior Backend Engineer, India",
+        "Senior Site Reliability Engineer - Monitoring and Anomaly Detection (Monetization)"
+      ]
+    }
+  ],
+  "top_npmi": [
+    {
+      "a": "css",
+      "b": "html",
+      "co": 9,
+      "npmi": 0.967
+    },
+    {
+      "a": "android",
+      "b": "ios",
+      "co": 5,
+      "npmi": 0.951
+    },
+    {
+      "a": "angular",
+      "b": "vue",
+      "co": 6,
+      "npmi": 0.843
+    },
+    {
+      "a": "statistics",
+      "b": "tableau",
+      "co": 10,
+      "npmi": 0.827
+    },
+    {
+      "a": "css",
+      "b": "jest",
+      "co": 5,
+      "npmi": 0.815
+    },
+    {
+      "a": "flink",
+      "b": "spark",
+      "co": 6,
+      "npmi": 0.763
+    },
+    {
+      "a": "rails",
+      "b": "ruby",
+      "co": 18,
+      "npmi": 0.755
+    },
+    {
+      "a": "looker",
+      "b": "tableau",
+      "co": 7,
+      "npmi": 0.74
+    },
+    {
+      "a": "hive",
+      "b": "spark",
+      "co": 5,
+      "npmi": 0.726
+    },
+    {
+      "a": "databricks",
+      "b": "snowflake",
+      "co": 5,
+      "npmi": 0.726
+    },
+    {
+      "a": "rag",
+      "b": "vector_db",
+      "co": 6,
+      "npmi": 0.719
+    },
+    {
+      "a": "github_actions",
+      "b": "jenkins",
+      "co": 9,
+      "npmi": 0.718
+    },
+    {
+      "a": "dbt",
+      "b": "snowflake",
+      "co": 7,
+      "npmi": 0.693
+    },
+    {
+      "a": "langchain",
+      "b": "rag",
+      "co": 6,
+      "npmi": 0.682
+    },
+    {
+      "a": "prompt_engineering",
+      "b": "rag",
+      "co": 6,
+      "npmi": 0.682
+    },
+    {
+      "a": "presto",
+      "b": "tableau",
+      "co": 7,
+      "npmi": 0.667
+    },
+    {
+      "a": "presto",
+      "b": "statistics",
+      "co": 5,
+      "npmi": 0.659
+    },
+    {
+      "a": "apex",
+      "b": "salesforce",
+      "co": 10,
+      "npmi": 0.652
+    },
+    {
+      "a": "flink",
+      "b": "kafka",
+      "co": 6,
+      "npmi": 0.649
+    },
+    {
+      "a": "presto",
+      "b": "spark",
+      "co": 6,
+      "npmi": 0.649
+    },
+    {
+      "a": "helm",
+      "b": "networking",
+      "co": 10,
+      "npmi": 0.636
+    },
+    {
+      "a": "dbt",
+      "b": "tableau",
+      "co": 7,
+      "npmi": 0.636
+    },
+    {
+      "a": "data_viz",
+      "b": "tableau",
+      "co": 15,
+      "npmi": 0.633
+    },
+    {
+      "a": "sql",
+      "b": "tableau",
+      "co": 17,
+      "npmi": 0.633
+    },
+    {
+      "a": "hibernate",
+      "b": "spring",
+      "co": 6,
+      "npmi": 0.612
+    },
+    {
+      "a": "elasticsearch",
+      "b": "kinesis",
+      "co": 5,
+      "npmi": 0.61
+    },
+    {
+      "a": "ec2_s3",
+      "b": "lambda",
+      "co": 7,
+      "npmi": 0.608
+    },
+    {
+      "a": "concurrency",
+      "b": "oop",
+      "co": 11,
+      "npmi": 0.597
+    },
+    {
+      "a": "mysql",
+      "b": "spring",
+      "co": 13,
+      "npmi": 0.597
+    },
+    {
+      "a": "ec2_s3",
+      "b": "rabbitmq",
+      "co": 6,
+      "npmi": 0.595
+    }
+  ]
+}

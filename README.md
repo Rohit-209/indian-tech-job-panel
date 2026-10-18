@@ -117,7 +117,7 @@ extraction/     # skills.yaml + parsers for titles, salary, geography
 db/             # schema.sql + upsert loop
 quality/        # assertions + volume/parse-rate monitor
 tools/          # token probing, one-off utilities
-analysis/       # Jupyter notebooks (A1 clustering, A2 survival, ...)
+analysis/       # one script per analysis (a1_clustering.py, ...) + shared loader
 report/         # findings.md + figures
 data/           # tokens.yaml (public) + tokens.private.yaml (gitignored)
 ```
