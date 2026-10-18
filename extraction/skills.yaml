@@ -1,0 +1,239 @@
+# Canonical skills dictionary for posting_skills.
+#
+# Each skill is a canonical slug with a category and one or more matchers.
+# Matching runs over clean_text(title + description). Word boundaries are
+# applied automatically: the match can't be preceded by a letter/digit/_ or
+# followed by a letter/digit/_/+/#, so `java` never fires on "JavaScript"
+# and `c` never fires on "C++".
+#
+# Matcher keys (any combination):
+#   aliases:     case-insensitive literals. The default; use for anything
+#                unambiguous (kubernetes, pytorch).
+#   exact:       case-sensitive literals. For words that are also English
+#                ("React" the library vs "react" the verb, "dbt", "Helm").
+#   listed:      case-sensitive AND only inside an enumeration — next to a
+#                comma, slash, parenthesis, or and/or/in/with/using. For tokens
+#                too short to trust anywhere else: Go, R, C. Never fires when
+#                followed by "-", "&", " to" (Go-to-market, R&D, C-suite).
+#   pattern:     raw Python regex, case-sensitive unless it starts with (?i).
+#                Last resort; add a test for every one.
+#   suppress_for: employer names (lowercase, as in postings.company). Postings
+#                from these employers never get this skill, because they name
+#                their own product in boilerplate. Otherwise MongoDB tops the
+#                database ranking simply because MongoDB is hiring.
+#
+# Bump `version` on any change; the extractor replays all postings each run,
+# so posting_skills always reflects exactly one dictionary version.
+
+version: 1
+
+skills:
+  # --- Languages -------------------------------------------------------------
+  python:      {cat: language, aliases: [python, python3]}
+  java:        {cat: language, aliases: [java, core java, java8, java 8, java 11, java 17]}
+  javascript:  {cat: language, aliases: [javascript, ecmascript, es6], exact: [JS]}
+  typescript:  {cat: language, aliases: [typescript], exact: [TS]}
+  go:          {cat: language, aliases: [golang], listed: [Go]}
+  rust:        {cat: language, exact: [Rust]}
+  c:           {cat: language, listed: [C]}
+  cpp:         {cat: language, aliases: [c++, cpp]}
+  csharp:      {cat: language, aliases: [c#, csharp]}
+  kotlin:      {cat: language, aliases: [kotlin]}
+  scala:       {cat: language, aliases: [scala]}
+  ruby:        {cat: language, aliases: [ruby]}
+  php:         {cat: language, aliases: [php]}
+  swift:       {cat: language, exact: [Swift, SwiftUI]}
+  objective_c: {cat: language, aliases: [objective-c, objective c]}
+  r:           {cat: language, listed: [R], aliases: [rstudio, tidyverse]}
+  sql:         {cat: language, exact: [SQL, T-SQL, PL/SQL]}
+  bash:        {cat: language, aliases: [bash, shell scripting, shell script, shell scripts, zsh]}
+  powershell:  {cat: language, aliases: [powershell]}
+  elixir:      {cat: language, aliases: [elixir]}
+  erlang:      {cat: language, aliases: [erlang]}
+  haskell:     {cat: language, aliases: [haskell]}
+  dart:        {cat: language, exact: [Dart]}
+  perl:        {cat: language, exact: [Perl]}
+  lua:         {cat: language, exact: [Lua]}
+  solidity:    {cat: language, aliases: [solidity]}
+  matlab:      {cat: language, aliases: [matlab]}
+  apex:        {cat: language, exact: [Apex]}
+
+  # --- Frontend --------------------------------------------------------------
+  react:       {cat: frontend, aliases: [react.js, reactjs, react js], exact: [React]}
+  nextjs:      {cat: frontend, aliases: [next.js, nextjs]}
+  angular:     {cat: frontend, aliases: [angular, angularjs]}
+  vue:         {cat: frontend, aliases: [vue, vue.js, vuejs, nuxt]}
+  svelte:      {cat: frontend, aliases: [svelte, sveltekit]}
+  redux:       {cat: frontend, aliases: [redux]}
+  html:        {cat: frontend, exact: [HTML, HTML5]}
+  css:         {cat: frontend, exact: [CSS, CSS3, SCSS, Sass]}
+  tailwind:    {cat: frontend, aliases: [tailwind, tailwindcss]}
+  webpack:     {cat: frontend, aliases: [webpack, vite]}
+
+  # --- Mobile ----------------------------------------------------------------
+  android:      {cat: mobile, aliases: [android]}
+  ios:          {cat: mobile, exact: [iOS]}
+  react_native: {cat: mobile, aliases: [react native]}
+  flutter:      {cat: mobile, aliases: [flutter]}
+  jetpack_compose: {cat: mobile, aliases: [jetpack compose]}
+
+  # --- Backend frameworks & runtimes -----------------------------------------
+  nodejs:      {cat: backend, aliases: [node.js, nodejs, node js]}
+  spring:      {cat: backend, aliases: [spring boot, springboot, spring framework, spring mvc, spring cloud]}
+  django:      {cat: backend, aliases: [django]}
+  flask:       {cat: backend, aliases: [flask]}
+  fastapi:     {cat: backend, aliases: [fastapi]}
+  rails:       {cat: backend, aliases: [ruby on rails, rails]}
+  dotnet:      {cat: backend, aliases: [.net, dotnet, asp.net, .net core]}
+  laravel:     {cat: backend, aliases: [laravel]}
+  express:     {cat: backend, aliases: [express.js, expressjs]}
+  nestjs:      {cat: backend, aliases: [nestjs, nest.js]}
+  hibernate:   {cat: backend, aliases: [hibernate, jpa]}
+
+  # --- APIs & architecture ---------------------------------------------------
+  rest:        {cat: architecture, exact: [REST, RESTful, REST API, REST APIs], aliases: [restful]}
+  graphql:     {cat: architecture, aliases: [graphql]}
+  grpc:        {cat: architecture, aliases: [grpc, protobuf, protocol buffers]}
+  microservices: {cat: architecture, aliases: [microservices, microservice, micro-services, micro services]}
+  distributed_systems: {cat: architecture, aliases: [distributed systems, distributed system, distributed computing]}
+  event_driven: {cat: architecture, aliases: [event-driven, event driven, event sourcing]}
+  system_design: {cat: architecture, aliases: [system design]}
+  dsa:         {cat: architecture, aliases: [data structures, DSA]}
+  oop:         {cat: architecture, aliases: [object-oriented, object oriented, OOP, OOPS]}
+  design_patterns: {cat: architecture, aliases: [design patterns]}
+  concurrency: {cat: architecture, aliases: [concurrency, multithreading, multi-threading, concurrent programming]}
+
+  # --- Databases -------------------------------------------------------------
+  postgresql:  {cat: database, aliases: [postgresql, postgres], suppress_for: [supabase]}
+  mysql:       {cat: database, aliases: [mysql, mariadb]}
+  oracle_db:   {cat: database, aliases: [oracle database, oracle db, pl/sql]}
+  sql_server:  {cat: database, aliases: [sql server, mssql, ms sql]}
+  mongodb:     {cat: database, aliases: [mongodb, mongo], suppress_for: [mongodb]}
+  redis:       {cat: database, aliases: [redis]}
+  cassandra:   {cat: database, aliases: [cassandra, scylladb]}
+  dynamodb:    {cat: database, aliases: [dynamodb]}
+  elasticsearch: {cat: database, aliases: [elasticsearch, elastic search, opensearch, elk stack, elk], suppress_for: [elastic]}
+  neo4j:       {cat: database, aliases: [neo4j, graph database, graph databases]}
+  sqlite:      {cat: database, aliases: [sqlite]}
+  clickhouse:  {cat: database, aliases: [clickhouse]}
+  cockroachdb: {cat: database, aliases: [cockroachdb]}
+  vector_db:   {cat: database, aliases: [vector database, vector databases, vector db, vector store, pinecone, weaviate, milvus, qdrant, pgvector, faiss], suppress_for: [pinecone]}
+  nosql:       {cat: database, aliases: [nosql]}
+
+  # --- Data engineering ------------------------------------------------------
+  spark:       {cat: data_eng, aliases: [apache spark, pyspark, spark sql, spark streaming], exact: [Spark]}
+  hadoop:      {cat: data_eng, aliases: [hadoop, hdfs, mapreduce]}
+  hive:        {cat: data_eng, exact: [Hive, HiveQL]}
+  kafka:       {cat: data_eng, aliases: [kafka, kafka streams]}
+  flink:       {cat: data_eng, aliases: [flink]}
+  airflow:     {cat: data_eng, aliases: [airflow]}
+  dbt:         {cat: data_eng, exact: [dbt, DBT]}
+  snowflake:   {cat: data_eng, exact: [Snowflake]}
+  databricks:  {cat: data_eng, aliases: [databricks, delta lake]}
+  bigquery:    {cat: data_eng, aliases: [bigquery, big query]}
+  redshift:    {cat: data_eng, aliases: [redshift]}
+  presto:      {cat: data_eng, aliases: [presto, trino, athena]}
+  etl:         {cat: data_eng, exact: [ETL, ELT], aliases: [data pipeline, data pipelines]}
+  data_warehouse: {cat: data_eng, aliases: [data warehouse, data warehousing, data lake, lakehouse, data modeling, data modelling, dimensional modeling]}
+  kinesis:     {cat: data_eng, aliases: [kinesis]}
+  pubsub:      {cat: data_eng, aliases: [pub/sub, pubsub]}
+  rabbitmq:    {cat: data_eng, aliases: [rabbitmq, activemq, sqs]}
+  fivetran:    {cat: data_eng, aliases: [fivetran, airbyte, stitch data]}
+
+  # --- Analytics & BI --------------------------------------------------------
+  excel:       {cat: analytics, exact: [MS Excel], aliases: [microsoft excel, advanced excel, spreadsheets, google sheets],
+                # "Excel" alone, but not the verb ("Excel in sharing information").
+                pattern: ['(?<![A-Za-z0-9_])Excel(?! (?:in|at)\b)(?![A-Za-z0-9_+#])']}
+  tableau:     {cat: analytics, aliases: [tableau]}
+  power_bi:    {cat: analytics, aliases: [power bi, powerbi]}
+  looker:      {cat: analytics, aliases: [looker, lookml]}
+  metabase:    {cat: analytics, aliases: [metabase, superset]}
+  amplitude:   {cat: analytics, exact: [Amplitude, Mixpanel]}
+  pandas:      {cat: analytics, aliases: [pandas]}
+  numpy:       {cat: analytics, aliases: [numpy, scipy]}
+  statistics:  {cat: analytics, aliases: [statistics, statistical analysis, statistical modeling, statistical modelling, hypothesis testing, regression analysis]}
+  ab_testing:  {cat: analytics, aliases: [a/b testing, a/b tests, a/b test, ab testing, experimentation, causal inference]}
+  data_viz:    {cat: analytics, aliases: [data visualization, data visualisation, dashboards, dashboarding]}
+  jupyter:     {cat: analytics, aliases: [jupyter]}
+
+  # --- Machine learning ------------------------------------------------------
+  machine_learning: {cat: ml, aliases: [machine learning, ml models, ml model, ml engineering], exact: [ML]}
+  deep_learning: {cat: ml, aliases: [deep learning, neural networks, neural network]}
+  nlp:         {cat: ml, aliases: [natural language processing], exact: [NLP]}
+  computer_vision: {cat: ml, aliases: [computer vision, image recognition, opencv]}
+  pytorch:     {cat: ml, aliases: [pytorch]}
+  tensorflow:  {cat: ml, aliases: [tensorflow, keras]}
+  jax:         {cat: ml, exact: [JAX]}
+  scikit_learn: {cat: ml, aliases: [scikit-learn, sklearn, scikit learn]}
+  xgboost:     {cat: ml, aliases: [xgboost, lightgbm, catboost, gradient boosting]}
+  recsys:      {cat: ml, aliases: [recommender systems, recommendation systems, recommender system, recommendation system, recommendation engine]}
+  reinforcement_learning: {cat: ml, aliases: [reinforcement learning, rlhf]}
+  mlops:       {cat: ml, aliases: [mlops, ml ops, mlflow, kubeflow, model deployment, model serving, feature store]}
+  sagemaker:   {cat: ml, aliases: [sagemaker, vertex ai]}
+  cuda:        {cat: ml, aliases: [cuda, gpu programming, triton]}
+  time_series: {cat: ml, aliases: [time series, time-series, time series forecasting, demand forecasting]}
+
+  # --- GenAI / LLMs ----------------------------------------------------------
+  llm:         {cat: genai, aliases: [large language model, large language models], exact: [LLM, LLMs]}
+  genai:       {cat: genai, aliases: [generative ai, gen ai, genai]}
+  rag:         {cat: genai, exact: [RAG], aliases: [retrieval-augmented generation, retrieval augmented generation]}
+  prompt_engineering: {cat: genai, aliases: [prompt engineering, prompt design]}
+  langchain:   {cat: genai, aliases: [langchain, langgraph, llamaindex, llama index], suppress_for: [langchain]}
+  openai_api:  {cat: genai, aliases: [openai api, gpt-4, gpt-4o, gpt4, chatgpt], suppress_for: [openai]}
+  hugging_face: {cat: genai, aliases: [hugging face, huggingface, transformers library]}
+  fine_tuning: {cat: genai, aliases: [fine-tuning, fine tuning, finetuning, lora]}
+  ai_agents:   {cat: genai, aliases: [ai agents, ai agent, agentic, multi-agent]}
+  embeddings:  {cat: genai, aliases: [embeddings, semantic search]}
+  evals:       {cat: genai, aliases: [llm evaluation, model evaluation, evals]}
+
+  # --- Cloud -----------------------------------------------------------------
+  aws:         {cat: cloud, exact: [AWS], aliases: [amazon web services]}
+  gcp:         {cat: cloud, exact: [GCP], aliases: [google cloud, google cloud platform]}
+  azure:       {cat: cloud, aliases: [azure, microsoft azure]}
+  ec2_s3:      {cat: cloud, exact: [EC2, S3, ECS, RDS]}
+  lambda:      {cat: cloud, aliases: [aws lambda, serverless, cloud functions]}
+  cloudflare:  {cat: cloud, aliases: [cloudflare], suppress_for: [cloudflare]}
+  supabase:    {cat: cloud, aliases: [supabase, firebase], suppress_for: [supabase]}
+  salesforce:  {cat: cloud, aliases: [salesforce, sfdc, salesforce.com]}
+
+  # --- DevOps / infra --------------------------------------------------------
+  docker:      {cat: devops, aliases: [docker, containerization, containerisation, containers]}
+  kubernetes:  {cat: devops, aliases: [kubernetes, k8s, eks, gke, aks, openshift]}
+  helm:        {cat: devops, exact: [Helm]}
+  terraform:   {cat: devops, aliases: [terraform, opentofu, infrastructure as code, iac, pulumi, cloudformation]}
+  ansible:     {cat: devops, aliases: [ansible], exact: [Puppet, Chef]}
+  ci_cd:       {cat: devops, aliases: [ci/cd, cicd, continuous integration, continuous delivery, continuous deployment]}
+  jenkins:     {cat: devops, aliases: [jenkins]}
+  github_actions: {cat: devops, aliases: [github actions]}
+  gitlab:      {cat: devops, aliases: [gitlab, gitlab ci], suppress_for: [gitlab]}
+  git:         {cat: devops, aliases: [git, github, bitbucket, version control]}
+  linux:       {cat: devops, aliases: [linux, unix, ubuntu, rhel, centos]}
+  prometheus:  {cat: devops, aliases: [prometheus, grafana]}
+  datadog:     {cat: devops, aliases: [datadog], suppress_for: [datadog]}
+  observability: {cat: devops, aliases: [observability, monitoring and alerting, opentelemetry, splunk, new relic]}
+  sre:         {cat: devops, aliases: [site reliability, sre, incident management, on-call, slos]}
+  networking:  {cat: devops, aliases: [tcp/ip, dns, load balancing, load balancers, http/2, networking protocols, bgp]}
+  nginx:       {cat: devops, aliases: [nginx, envoy, istio, service mesh]}
+
+  # --- Testing ---------------------------------------------------------------
+  test_automation: {cat: testing, aliases: [test automation, automation testing, automated testing, automated tests]}
+  selenium:    {cat: testing, aliases: [selenium, webdriver]}
+  playwright:  {cat: testing, aliases: [playwright, cypress, puppeteer]}
+  junit:       {cat: testing, aliases: [junit, testng, mockito]}
+  pytest:      {cat: testing, aliases: [pytest]}
+  jest:        {cat: testing, aliases: [jest, mocha, vitest]}
+  unit_testing: {cat: testing, aliases: [unit testing, unit tests, integration testing, integration tests, tdd, test-driven]}
+  performance_testing: {cat: testing, aliases: [performance testing, load testing, jmeter, gatling, k6]}
+  api_testing: {cat: testing, aliases: [api testing, rest assured], suppress_for: [postman]}
+  postman:     {cat: testing, exact: [Postman], suppress_for: [postman]}
+
+  # --- Security & identity ---------------------------------------------------
+  security:    {cat: security, aliases: [application security, appsec, cybersecurity, cyber security, threat modeling, vulnerability management, penetration testing, owasp]}
+  identity:    {cat: security, aliases: [oauth, oauth2, oauth 2.0, openid connect, oidc, saml, sso, single sign-on, identity and access management, scim], exact: [IAM]}
+  cryptography: {cat: security, aliases: [cryptography, encryption, pki, tls]}
+  okta:        {cat: security, exact: [Okta], suppress_for: [okta]}
+
+  # --- Practices -------------------------------------------------------------
+  agile:       {cat: practice, aliases: [agile, scrum, kanban]}
+  code_review: {cat: practice, aliases: [code review, code reviews]}
+  jira:        {cat: practice, aliases: [jira, confluence]}

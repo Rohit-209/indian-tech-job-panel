@@ -85,6 +85,14 @@ python -m quality.monitor
 
 # Probe token list (find stale/empty tokens)
 python -m tools.probe_tokens
+
+# Skill extraction: replays extraction/skills.yaml over every posting
+python -m extraction.skills --dry-run      # report only
+python -m extraction.skills                # rewrite posting_skills
+python -m extraction.skills --explain go   # audit match contexts for one skill
+
+# Tests
+pip install -e '.[dev]' && pytest
 ```
 
 For production, `.github/workflows/collect.yml` runs the above daily at 08:00 IST. Repo secrets required: `SUPABASE_DB_URL`, `COLLECTOR_CONTACT_EMAIL`.
