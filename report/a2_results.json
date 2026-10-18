@@ -1,0 +1,993 @@
+{
+  "meta": {
+    "panel_start": "2026-09-07",
+    "panel_end": "2026-10-18",
+    "source_deaths": {
+      "Postman": "2026-09-16"
+    }
+  },
+  "n": 586,
+  "events": 250,
+  "km_median_days": 43.0,
+  "naive_mean_closed_age": 81.58,
+  "spikes": [
+    {
+      "age": 30,
+      "closures_at_age\u00b12": 19,
+      "expected_from_neighbours": 8.2
+    },
+    {
+      "age": 45,
+      "closures_at_age\u00b12": 8,
+      "expected_from_neighbours": 12.5
+    },
+    {
+      "age": 60,
+      "closures_at_age\u00b12": 13,
+      "expected_from_neighbours": 12.0
+    },
+    {
+      "age": 90,
+      "closures_at_age\u00b12": 4,
+      "expected_from_neighbours": 4.8
+    },
+    {
+      "age": 120,
+      "closures_at_age\u00b12": 4,
+      "expected_from_neighbours": 2.2
+    },
+    {
+      "age": 180,
+      "closures_at_age\u00b12": 2,
+      "expected_from_neighbours": 1.0
+    }
+  ],
+  "km": {
+    "family": {
+      "data_ml": {
+        "n": 36,
+        "events": 15,
+        "median_days": 40.0
+      },
+      "infra": {
+        "n": 41,
+        "events": 14,
+        "median_days": 44.0
+      },
+      "non_tech": {
+        "n": 194,
+        "events": 81,
+        "median_days": 40.0
+      },
+      "other_tech": {
+        "n": 14,
+        "events": 7,
+        "median_days": 59.0
+      },
+      "product_design": {
+        "n": 24,
+        "events": 11,
+        "median_days": 50.0
+      },
+      "software_eng": {
+        "n": 218,
+        "events": 95,
+        "median_days": 36.0
+      },
+      "solutions": {
+        "n": 59,
+        "events": 27,
+        "median_days": 49.0
+      }
+    },
+    "family_test": {
+      "chi2": 4.58,
+      "df": 6,
+      "p": 0.5987
+    },
+    "seniority": {
+      "entry_mid": {
+        "n": 49,
+        "events": 28,
+        "median_days": 16.0
+      },
+      "manager_plus": {
+        "n": 79,
+        "events": 34,
+        "median_days": 50.0
+      },
+      "principal": {
+        "n": 20,
+        "events": 9,
+        "median_days": 55.0
+      },
+      "senior": {
+        "n": 166,
+        "events": 67,
+        "median_days": 33.0
+      },
+      "staff": {
+        "n": 130,
+        "events": 55,
+        "median_days": 54.0
+      },
+      "unspecified": {
+        "n": 142,
+        "events": 57,
+        "median_days": 43.0
+      }
+    },
+    "seniority_test": {
+      "chi2": 4.1,
+      "df": 5,
+      "p": 0.5355
+    }
+  },
+  "cox": {
+    "main": {
+      "n": 586,
+      "events": 250,
+      "concordance": 0.657,
+      "hr": {
+        "skills_per_5": {
+          "hr": 1.264,
+          "lo": 1.143,
+          "hi": 1.398,
+          "p": 0.0
+        },
+        "family=data_ml": {
+          "hr": 0.806,
+          "lo": 0.464,
+          "hi": 1.402,
+          "p": 0.446
+        },
+        "family=infra": {
+          "hr": 0.759,
+          "lo": 0.507,
+          "hi": 1.138,
+          "p": 0.182
+        },
+        "family=non_tech": {
+          "hr": 1.387,
+          "lo": 0.927,
+          "hi": 2.076,
+          "p": 0.112
+        },
+        "family=other_tech": {
+          "hr": 1.655,
+          "lo": 0.591,
+          "hi": 4.628,
+          "p": 0.337
+        },
+        "family=product_design": {
+          "hr": 1.367,
+          "lo": 0.686,
+          "hi": 2.725,
+          "p": 0.374
+        },
+        "family=solutions": {
+          "hr": 0.698,
+          "lo": 0.368,
+          "hi": 1.324,
+          "p": 0.271
+        },
+        "seniority=entry_mid": {
+          "hr": 1.319,
+          "lo": 0.845,
+          "hi": 2.059,
+          "p": 0.222
+        },
+        "seniority=manager_plus": {
+          "hr": 0.963,
+          "lo": 0.631,
+          "hi": 1.47,
+          "p": 0.862
+        },
+        "seniority=principal": {
+          "hr": 0.496,
+          "lo": 0.267,
+          "hi": 0.92,
+          "p": 0.026
+        },
+        "seniority=staff": {
+          "hr": 0.925,
+          "lo": 0.609,
+          "hi": 1.404,
+          "p": 0.713
+        },
+        "seniority=unspecified": {
+          "hr": 1.248,
+          "lo": 0.835,
+          "hi": 1.865,
+          "p": 0.279
+        },
+        "city=NCR": {
+          "hr": 0.685,
+          "lo": 0.51,
+          "hi": 0.919,
+          "p": 0.012
+        },
+        "city=no_city": {
+          "hr": 1.872,
+          "lo": 0.78,
+          "hi": 4.494,
+          "p": 0.161
+        },
+        "city=other_city": {
+          "hr": 1.223,
+          "lo": 0.531,
+          "hi": 2.816,
+          "p": 0.636
+        },
+        "workplace=onsite": {
+          "hr": 1.999,
+          "lo": 0.903,
+          "hi": 4.425,
+          "p": 0.088
+        },
+        "workplace=remote": {
+          "hr": 1.825,
+          "lo": 1.068,
+          "hi": 3.12,
+          "p": 0.028
+        },
+        "workplace=unknown": {
+          "hr": 1.037,
+          "lo": 0.565,
+          "hi": 1.905,
+          "p": 0.906
+        }
+      }
+    },
+    "main_company_strata": {
+      "n": 586,
+      "events": 250,
+      "concordance": 0.67,
+      "hr": {
+        "skills_per_5": {
+          "hr": 1.156,
+          "lo": 0.991,
+          "hi": 1.348,
+          "p": 0.064
+        },
+        "family=data_ml": {
+          "hr": 0.753,
+          "lo": 0.407,
+          "hi": 1.396,
+          "p": 0.368
+        },
+        "family=infra": {
+          "hr": 0.84,
+          "lo": 0.463,
+          "hi": 1.525,
+          "p": 0.566
+        },
+        "family=non_tech": {
+          "hr": 1.093,
+          "lo": 0.671,
+          "hi": 1.779,
+          "p": 0.722
+        },
+        "family=other_tech": {
+          "hr": 1.511,
+          "lo": 0.592,
+          "hi": 3.861,
+          "p": 0.388
+        },
+        "family=product_design": {
+          "hr": 1.052,
+          "lo": 0.501,
+          "hi": 2.21,
+          "p": 0.893
+        },
+        "family=solutions": {
+          "hr": 0.846,
+          "lo": 0.483,
+          "hi": 1.479,
+          "p": 0.557
+        },
+        "seniority=entry_mid": {
+          "hr": 1.791,
+          "lo": 1.024,
+          "hi": 3.133,
+          "p": 0.041
+        },
+        "seniority=manager_plus": {
+          "hr": 0.909,
+          "lo": 0.555,
+          "hi": 1.487,
+          "p": 0.703
+        },
+        "seniority=principal": {
+          "hr": 0.587,
+          "lo": 0.27,
+          "hi": 1.276,
+          "p": 0.178
+        },
+        "seniority=staff": {
+          "hr": 0.855,
+          "lo": 0.568,
+          "hi": 1.287,
+          "p": 0.452
+        },
+        "seniority=unspecified": {
+          "hr": 1.199,
+          "lo": 0.78,
+          "hi": 1.843,
+          "p": 0.409
+        },
+        "city=NCR": {
+          "hr": 0.783,
+          "lo": 0.408,
+          "hi": 1.501,
+          "p": 0.461
+        },
+        "city=no_city": {
+          "hr": 4.073,
+          "lo": 1.715,
+          "hi": 9.672,
+          "p": 0.001
+        },
+        "city=other_city": {
+          "hr": 2.07,
+          "lo": 0.677,
+          "hi": 6.33,
+          "p": 0.202
+        },
+        "workplace=onsite": {
+          "hr": 1.982,
+          "lo": 1.152,
+          "hi": 3.408,
+          "p": 0.013
+        },
+        "workplace=remote": {
+          "hr": 0.906,
+          "lo": 0.394,
+          "hi": 2.083,
+          "p": 0.817
+        },
+        "workplace=unknown": {
+          "hr": 1.493,
+          "lo": 0.944,
+          "hi": 2.36,
+          "p": 0.086
+        }
+      }
+    },
+    "born": {
+      "n": 207,
+      "events": 50,
+      "concordance": 0.721,
+      "hr": {
+        "skills_per_5": {
+          "hr": 1.197,
+          "lo": 0.892,
+          "hi": 1.605,
+          "p": 0.23
+        },
+        "family=non_tech": {
+          "hr": 0.877,
+          "lo": 0.515,
+          "hi": 1.496,
+          "p": 0.631
+        },
+        "family=solutions": {
+          "hr": 0.603,
+          "lo": 0.295,
+          "hi": 1.234,
+          "p": 0.166
+        },
+        "seniority=entry_mid": {
+          "hr": 2.287,
+          "lo": 1.042,
+          "hi": 5.021,
+          "p": 0.039
+        },
+        "seniority=staff": {
+          "hr": 0.802,
+          "lo": 0.443,
+          "hi": 1.449,
+          "p": 0.464
+        },
+        "seniority=unspecified": {
+          "hr": 1.201,
+          "lo": 0.675,
+          "hi": 2.139,
+          "p": 0.534
+        },
+        "city=NCR": {
+          "hr": 0.636,
+          "lo": 0.331,
+          "hi": 1.225,
+          "p": 0.176
+        },
+        "city=no_city": {
+          "hr": 4.583,
+          "lo": 3.046,
+          "hi": 6.895,
+          "p": 0.0
+        },
+        "workplace=onsite": {
+          "hr": 2.812,
+          "lo": 1.321,
+          "hi": 5.983,
+          "p": 0.007
+        },
+        "workplace=remote": {
+          "hr": 1.225,
+          "lo": 0.659,
+          "hi": 2.277,
+          "p": 0.52
+        },
+        "workplace=unknown": {
+          "hr": 1.233,
+          "lo": 0.711,
+          "hi": 2.136,
+          "p": 0.456
+        }
+      },
+      "ph_violations": {
+        "city=no_city": {
+          "test_statistic": 25.5731,
+          "p": 0.0,
+          "-log2(p)": 21.1629
+        },
+        "family=solutions": {
+          "test_statistic": 5.0077,
+          "p": 0.0252,
+          "-log2(p)": 5.3084
+        },
+        "workplace=remote": {
+          "test_statistic": 14.9837,
+          "p": 0.0001,
+          "-log2(p)": 13.1708
+        },
+        "workplace=unknown": {
+          "test_statistic": 7.3304,
+          "p": 0.0068,
+          "-log2(p)": 7.2045
+        }
+      }
+    },
+    "born_company_strata": {
+      "n": 207,
+      "events": 50,
+      "concordance": 0.699,
+      "hr": {
+        "skills_per_5": {
+          "hr": 1.181,
+          "lo": 0.889,
+          "hi": 1.57,
+          "p": 0.251
+        },
+        "family=non_tech": {
+          "hr": 0.855,
+          "lo": 0.297,
+          "hi": 2.463,
+          "p": 0.771
+        },
+        "family=solutions": {
+          "hr": 0.484,
+          "lo": 0.147,
+          "hi": 1.588,
+          "p": 0.231
+        },
+        "seniority=entry_mid": {
+          "hr": 6.845,
+          "lo": 1.969,
+          "hi": 23.802,
+          "p": 0.002
+        },
+        "seniority=staff": {
+          "hr": 0.84,
+          "lo": 0.364,
+          "hi": 1.937,
+          "p": 0.682
+        },
+        "seniority=unspecified": {
+          "hr": 1.167,
+          "lo": 0.516,
+          "hi": 2.639,
+          "p": 0.71
+        },
+        "city=NCR": {
+          "hr": 0.573,
+          "lo": 0.167,
+          "hi": 1.966,
+          "p": 0.376
+        },
+        "city=no_city": {
+          "hr": 1.487,
+          "lo": 0.257,
+          "hi": 8.613,
+          "p": 0.658
+        },
+        "workplace=onsite": {
+          "hr": 2.321,
+          "lo": 0.711,
+          "hi": 7.577,
+          "p": 0.163
+        },
+        "workplace=remote": {
+          "hr": 2.129,
+          "lo": 0.434,
+          "hi": 10.44,
+          "p": 0.352
+        },
+        "workplace=unknown": {
+          "hr": 1.381,
+          "lo": 0.507,
+          "hi": 3.76,
+          "p": 0.528
+        }
+      },
+      "ph_violations": {
+        "workplace=remote": {
+          "test_statistic": 6.4188,
+          "p": 0.0113,
+          "-log2(p)": 6.4686
+        }
+      }
+    },
+    "first_gap": {
+      "n": 586,
+      "events": 281,
+      "concordance": 0.661,
+      "hr": {
+        "skills_per_5": {
+          "hr": 1.238,
+          "lo": 1.129,
+          "hi": 1.357,
+          "p": 0.0
+        },
+        "family=data_ml": {
+          "hr": 0.911,
+          "lo": 0.495,
+          "hi": 1.679,
+          "p": 0.766
+        },
+        "family=infra": {
+          "hr": 0.663,
+          "lo": 0.446,
+          "hi": 0.985,
+          "p": 0.042
+        },
+        "family=non_tech": {
+          "hr": 1.152,
+          "lo": 0.775,
+          "hi": 1.712,
+          "p": 0.486
+        },
+        "family=other_tech": {
+          "hr": 2.002,
+          "lo": 0.666,
+          "hi": 6.019,
+          "p": 0.216
+        },
+        "family=product_design": {
+          "hr": 1.484,
+          "lo": 0.722,
+          "hi": 3.047,
+          "p": 0.283
+        },
+        "family=solutions": {
+          "hr": 0.557,
+          "lo": 0.334,
+          "hi": 0.928,
+          "p": 0.025
+        },
+        "seniority=entry_mid": {
+          "hr": 1.642,
+          "lo": 1.029,
+          "hi": 2.618,
+          "p": 0.037
+        },
+        "seniority=manager_plus": {
+          "hr": 0.899,
+          "lo": 0.575,
+          "hi": 1.407,
+          "p": 0.642
+        },
+        "seniority=principal": {
+          "hr": 0.415,
+          "lo": 0.217,
+          "hi": 0.795,
+          "p": 0.008
+        },
+        "seniority=staff": {
+          "hr": 0.876,
+          "lo": 0.595,
+          "hi": 1.29,
+          "p": 0.503
+        },
+        "seniority=unspecified": {
+          "hr": 1.489,
+          "lo": 0.998,
+          "hi": 2.221,
+          "p": 0.051
+        },
+        "city=NCR": {
+          "hr": 0.606,
+          "lo": 0.449,
+          "hi": 0.817,
+          "p": 0.001
+        },
+        "city=no_city": {
+          "hr": 1.699,
+          "lo": 0.795,
+          "hi": 3.632,
+          "p": 0.171
+        },
+        "city=other_city": {
+          "hr": 1.288,
+          "lo": 0.693,
+          "hi": 2.394,
+          "p": 0.423
+        },
+        "workplace=onsite": {
+          "hr": 1.925,
+          "lo": 0.872,
+          "hi": 4.248,
+          "p": 0.105
+        },
+        "workplace=remote": {
+          "hr": 1.812,
+          "lo": 1.129,
+          "hi": 2.906,
+          "p": 0.014
+        },
+        "workplace=unknown": {
+          "hr": 1.083,
+          "lo": 0.635,
+          "hi": 1.847,
+          "p": 0.769
+        }
+      }
+    },
+    "first_gap_company_strata": {
+      "n": 586,
+      "events": 281,
+      "concordance": 0.667,
+      "hr": {
+        "skills_per_5": {
+          "hr": 1.141,
+          "lo": 0.984,
+          "hi": 1.322,
+          "p": 0.082
+        },
+        "family=data_ml": {
+          "hr": 0.871,
+          "lo": 0.493,
+          "hi": 1.541,
+          "p": 0.636
+        },
+        "family=infra": {
+          "hr": 0.765,
+          "lo": 0.431,
+          "hi": 1.359,
+          "p": 0.361
+        },
+        "family=non_tech": {
+          "hr": 0.924,
+          "lo": 0.579,
+          "hi": 1.473,
+          "p": 0.739
+        },
+        "family=other_tech": {
+          "hr": 1.987,
+          "lo": 0.866,
+          "hi": 4.559,
+          "p": 0.105
+        },
+        "family=product_design": {
+          "hr": 1.286,
+          "lo": 0.658,
+          "hi": 2.515,
+          "p": 0.462
+        },
+        "family=solutions": {
+          "hr": 0.69,
+          "lo": 0.397,
+          "hi": 1.198,
+          "p": 0.187
+        },
+        "seniority=entry_mid": {
+          "hr": 2.461,
+          "lo": 1.427,
+          "hi": 4.246,
+          "p": 0.001
+        },
+        "seniority=manager_plus": {
+          "hr": 0.957,
+          "lo": 0.596,
+          "hi": 1.539,
+          "p": 0.857
+        },
+        "seniority=principal": {
+          "hr": 0.508,
+          "lo": 0.236,
+          "hi": 1.095,
+          "p": 0.084
+        },
+        "seniority=staff": {
+          "hr": 0.862,
+          "lo": 0.581,
+          "hi": 1.277,
+          "p": 0.458
+        },
+        "seniority=unspecified": {
+          "hr": 1.396,
+          "lo": 0.931,
+          "hi": 2.093,
+          "p": 0.107
+        },
+        "city=NCR": {
+          "hr": 0.684,
+          "lo": 0.368,
+          "hi": 1.271,
+          "p": 0.23
+        },
+        "city=no_city": {
+          "hr": 2.798,
+          "lo": 1.238,
+          "hi": 6.323,
+          "p": 0.013
+        },
+        "city=other_city": {
+          "hr": 1.592,
+          "lo": 0.542,
+          "hi": 4.677,
+          "p": 0.398
+        },
+        "workplace=onsite": {
+          "hr": 1.8,
+          "lo": 1.065,
+          "hi": 3.042,
+          "p": 0.028
+        },
+        "workplace=remote": {
+          "hr": 0.885,
+          "lo": 0.397,
+          "hi": 1.972,
+          "p": 0.765
+        },
+        "workplace=unknown": {
+          "hr": 1.389,
+          "lo": 0.903,
+          "hi": 2.137,
+          "p": 0.135
+        }
+      }
+    },
+    "no_30d": {
+      "n": 586,
+      "events": 231,
+      "concordance": 0.663,
+      "hr": {
+        "skills_per_5": {
+          "hr": 1.279,
+          "lo": 1.156,
+          "hi": 1.415,
+          "p": 0.0
+        },
+        "family=data_ml": {
+          "hr": 0.923,
+          "lo": 0.523,
+          "hi": 1.628,
+          "p": 0.781
+        },
+        "family=infra": {
+          "hr": 0.759,
+          "lo": 0.478,
+          "hi": 1.205,
+          "p": 0.242
+        },
+        "family=non_tech": {
+          "hr": 1.486,
+          "lo": 1.028,
+          "hi": 2.148,
+          "p": 0.035
+        },
+        "family=other_tech": {
+          "hr": 1.82,
+          "lo": 0.691,
+          "hi": 4.794,
+          "p": 0.225
+        },
+        "family=product_design": {
+          "hr": 1.536,
+          "lo": 0.883,
+          "hi": 2.671,
+          "p": 0.129
+        },
+        "family=solutions": {
+          "hr": 0.712,
+          "lo": 0.335,
+          "hi": 1.511,
+          "p": 0.376
+        },
+        "seniority=entry_mid": {
+          "hr": 1.447,
+          "lo": 0.901,
+          "hi": 2.322,
+          "p": 0.126
+        },
+        "seniority=manager_plus": {
+          "hr": 1.042,
+          "lo": 0.726,
+          "hi": 1.495,
+          "p": 0.823
+        },
+        "seniority=principal": {
+          "hr": 0.542,
+          "lo": 0.308,
+          "hi": 0.955,
+          "p": 0.034
+        },
+        "seniority=staff": {
+          "hr": 0.977,
+          "lo": 0.669,
+          "hi": 1.427,
+          "p": 0.906
+        },
+        "seniority=unspecified": {
+          "hr": 1.274,
+          "lo": 0.79,
+          "hi": 2.052,
+          "p": 0.321
+        },
+        "city=NCR": {
+          "hr": 0.627,
+          "lo": 0.441,
+          "hi": 0.892,
+          "p": 0.009
+        },
+        "city=no_city": {
+          "hr": 1.947,
+          "lo": 0.861,
+          "hi": 4.4,
+          "p": 0.109
+        },
+        "city=other_city": {
+          "hr": 1.131,
+          "lo": 0.495,
+          "hi": 2.584,
+          "p": 0.77
+        },
+        "workplace=onsite": {
+          "hr": 2.219,
+          "lo": 0.98,
+          "hi": 5.028,
+          "p": 0.056
+        },
+        "workplace=remote": {
+          "hr": 1.741,
+          "lo": 1.069,
+          "hi": 2.835,
+          "p": 0.026
+        },
+        "workplace=unknown": {
+          "hr": 1.04,
+          "lo": 0.562,
+          "hi": 1.923,
+          "p": 0.901
+        }
+      }
+    },
+    "no_30d_company_strata": {
+      "n": 586,
+      "events": 231,
+      "concordance": 0.679,
+      "hr": {
+        "skills_per_5": {
+          "hr": 1.149,
+          "lo": 0.979,
+          "hi": 1.349,
+          "p": 0.089
+        },
+        "family=data_ml": {
+          "hr": 0.869,
+          "lo": 0.465,
+          "hi": 1.623,
+          "p": 0.659
+        },
+        "family=infra": {
+          "hr": 0.853,
+          "lo": 0.458,
+          "hi": 1.589,
+          "p": 0.617
+        },
+        "family=non_tech": {
+          "hr": 1.159,
+          "lo": 0.699,
+          "hi": 1.921,
+          "p": 0.567
+        },
+        "family=other_tech": {
+          "hr": 1.668,
+          "lo": 0.648,
+          "hi": 4.295,
+          "p": 0.289
+        },
+        "family=product_design": {
+          "hr": 1.13,
+          "lo": 0.514,
+          "hi": 2.486,
+          "p": 0.761
+        },
+        "family=solutions": {
+          "hr": 0.904,
+          "lo": 0.498,
+          "hi": 1.639,
+          "p": 0.739
+        },
+        "seniority=entry_mid": {
+          "hr": 2.106,
+          "lo": 1.159,
+          "hi": 3.824,
+          "p": 0.014
+        },
+        "seniority=manager_plus": {
+          "hr": 1.011,
+          "lo": 0.607,
+          "hi": 1.686,
+          "p": 0.966
+        },
+        "seniority=principal": {
+          "hr": 0.663,
+          "lo": 0.302,
+          "hi": 1.457,
+          "p": 0.307
+        },
+        "seniority=staff": {
+          "hr": 0.917,
+          "lo": 0.597,
+          "hi": 1.41,
+          "p": 0.693
+        },
+        "seniority=unspecified": {
+          "hr": 1.226,
+          "lo": 0.776,
+          "hi": 1.937,
+          "p": 0.382
+        },
+        "city=NCR": {
+          "hr": 0.701,
+          "lo": 0.356,
+          "hi": 1.381,
+          "p": 0.305
+        },
+        "city=no_city": {
+          "hr": 3.798,
+          "lo": 1.591,
+          "hi": 9.069,
+          "p": 0.003
+        },
+        "city=other_city": {
+          "hr": 1.587,
+          "lo": 0.483,
+          "hi": 5.211,
+          "p": 0.447
+        },
+        "workplace=onsite": {
+          "hr": 2.262,
+          "lo": 1.275,
+          "hi": 4.014,
+          "p": 0.005
+        },
+        "workplace=remote": {
+          "hr": 0.963,
+          "lo": 0.408,
+          "hi": 2.271,
+          "p": 0.931
+        },
+        "workplace=unknown": {
+          "hr": 1.555,
+          "lo": 0.974,
+          "hi": 2.483,
+          "p": 0.064
+        }
+      }
+    }
+  }
+}

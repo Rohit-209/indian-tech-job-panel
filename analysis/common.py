@@ -27,6 +27,32 @@ def _query(conn, sql: str) -> pd.DataFrame:
         return pd.DataFrame(cur.fetchall(), columns=cols)
 
 
+def load_lifecycle() -> tuple[pd.DataFrame, pd.DataFrame]:
+    """-> (per-posting ATS publish date, observations).
+
+    published_on is the employer's own publish timestamp from the raw payload
+    (Greenhouse first_published, Ashby publishedAt), as an IST date. It gives
+    postings already live on panel day 1 a known age at entry, which is what
+    lets survival analysis handle left truncation instead of dropping them.
+    """
+    import gzip
+    import json
+
+    load_dotenv(REPO / ".env")
+    with psycopg.connect(os.environ["SUPABASE_DB_URL"]) as conn:
+        raw = _query(conn, "SELECT posting_key, source, payload_raw FROM postings")
+        obs = _query(conn, "SELECT posting_key, observed_on FROM observations")
+    published = []
+    for key, source, payload_raw in raw.itertuples(index=False):
+        p = json.loads(gzip.decompress(payload_raw))
+        ts = p.get("first_published") if source == "greenhouse" else p.get("publishedAt")
+        published.append((
+            key,
+            pd.Timestamp(ts).tz_convert("Asia/Kolkata").date() if ts else None,
+        ))
+    return pd.DataFrame(published, columns=["posting_key", "published_on"]), obs
+
+
 def load_postings() -> tuple[pd.DataFrame, pd.DataFrame]:
     """-> (postings, posting_skills). postings carries an `in_scope` column."""
     load_dotenv(REPO / ".env")
