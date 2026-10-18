@@ -1,31 +1,30 @@
 # The Indian Tech Job Market Panel
 
-A longitudinal dataset of Indian tech job postings, observed daily for 12 weeks, and the analysis program built on top of it.
+A longitudinal dataset of India-located tech job postings, observed daily from employers' own job boards, and the analysis built on top of it.
 
-**Status:** collection in progress — findings publish week 12.
+**Status:** collection day 42 of 84. Findings below are a **draft** and will be re-run on the final panel (2026-11-29); the skill-drift analysis runs on 2026-12-01 as [pre-registered](report/A3_preregistration.md).
+
+## Findings (draft)
+
+1. **Who is hiring explains a posting's skill requirements about as well as its title does** (Cramér's V 0.46 for employer vs 0.49 for title family, across 213 technical postings).
+2. **"Software engineer" hides an infrastructure role:** the most stable cross-employer skill cluster is split 22 / 20 between postings titled software engineer and SRE/infra.
+3. **Postings stay open a median of 43 days** (95% CI 33–50) from publication, against 17 days by the naive average.
+4. **Role family doesn't detectably predict time-to-close;** most apparent predictors (remote, NCR, principal) are employer composition.
+5. **Pay transparency is near zero:** 3.8% of postings show an India pay range, all from one employer.
+
+→ **[Read the report](report/findings.md)**
 
 ## What this is
 
-Most job-market analyses use a single-day snapshot: what's open right now. This project builds something structurally different — the same postings observed day after day — so we can ask questions a snapshot can't answer:
-
-- How long does a SQL-heavy role stay open compared to a Python-heavy one?
-- Has the skill mix shifted between August and November in ways distinguishable from noise?
-- Which cities specialise in which kinds of work?
-- Who discloses salary, and how does that bias headline pay estimates?
-
-Nobody has this dataset for the Indian market. That's the whole point.
-
-## Findings
-
-_Will be published as a static report on completion. Link goes here._
+Most job-market analyses use a single-day snapshot: what's open right now. This project builds something structurally different — the same postings observed day after day — so it can ask questions a snapshot can't: how long postings stay open and what predicts it, whether one job title hides several roles, whether the skill mix shifts, and who discloses pay.
 
 ## Data & methodology
 
 Full details in [`DATA_DICTIONARY.md`](./DATA_DICTIONARY.md): every table and field, null semantics, vocabularies, known issues and coverage.
 
-**Scope:** Full-time technical individual-contributor roles (software engineering, data, analytics, ML) posted by companies hiring in India.
+**Scope:** India-located postings; the analysis population is full-time technical individual-contributor roles (software, infrastructure, data, ML, QA, security).
 
-**Sources:** Greenhouse, Lever, and Ashby applicant tracking system APIs. Public, documented, unauthenticated JSON. ~300 company tokens covering India-HQ tech companies (Razorpay, Zerodha, Postman, Swiggy, Freshworks, ...) and India-hiring globals (Stripe, Atlassian, GitLab, ...).
+**Sources:** Greenhouse and Ashby applicant tracking system APIs — public, documented, unauthenticated JSON. 13 employers have India postings in the panel, mostly global tech companies' India offices (Okta, MongoDB, Stripe, GitLab, Twilio, Elastic, Airbnb, OpenAI, ...). Lever is supported by the collector but no Lever board yielded India postings, and no working board was found for Indian-headquartered companies, so **this is a panel of global employers hiring in India, not of the Indian tech market as a whole** (see the report's limitations).
 
 **Collection window:** 12 weeks starting September 2026.
 
