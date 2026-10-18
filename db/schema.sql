@@ -72,6 +72,21 @@ CREATE TABLE IF NOT EXISTS posting_skills (
 
 CREATE INDEX IF NOT EXISTS posting_skills_skill_idx ON posting_skills (skill);
 
+-- title_llm_cache: Gemini's (title_family, seniority) per distinct
+-- (company, title), filled by extraction/titles_llm.py. Keyed by model and
+-- prompt_version so a prompt change re-classifies without losing old rows.
+CREATE TABLE IF NOT EXISTS title_llm_cache (
+    title_key      TEXT NOT NULL,        -- lower(company) || '|' || lower(title)
+    model          TEXT NOT NULL,
+    prompt_version INT NOT NULL,
+    company        TEXT,
+    title_raw      TEXT,
+    title_family   TEXT NOT NULL,
+    seniority      TEXT NOT NULL,
+    created_at     TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    PRIMARY KEY (title_key, model, prompt_version)
+);
+
 -- observations: one row per (posting, day-we-saw-it). This is the panel.
 -- Also stores content_hash so we can detect edits by comparing across days.
 CREATE TABLE IF NOT EXISTS observations (

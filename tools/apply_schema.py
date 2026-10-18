@@ -30,7 +30,8 @@ def main() -> int:
             SELECT table_name
             FROM information_schema.tables
             WHERE table_schema = 'public'
-              AND table_name IN ('postings', 'posting_skills', 'observations', 'run_log')
+              AND table_name IN ('postings', 'posting_skills', 'observations', 'run_log',
+                                 'title_llm_cache')
             ORDER BY table_name
             """
         )
@@ -39,7 +40,7 @@ def main() -> int:
     print("Applied schema. Tables in public schema:")
     for t in tables:
         print(f"  - {t}")
-    expected = {"postings", "posting_skills", "observations", "run_log"}
+    expected = {"postings", "posting_skills", "observations", "run_log", "title_llm_cache"}
     missing = expected - set(tables)
     if missing:
         print(f"MISSING: {missing}", file=sys.stderr)

@@ -91,6 +91,12 @@ python -m extraction.skills --dry-run      # report only
 python -m extraction.skills                # rewrite posting_skills
 python -m extraction.skills --explain go   # audit match contexts for one skill
 
+# Title normalisation: rules baseline vs Gemini, scored on hand labels
+python -m extraction.titles --guide                 # labelling guide / taxonomy
+python -m extraction.titles --label-llm             # fill Gemini cache (needs GEMINI_API_KEY)
+python -m extraction.titles --evaluate              # score both vs data/title_labels.csv
+python -m extraction.titles --method rules          # write title_family/seniority
+
 # Tests
 pip install -e '.[dev]' && pytest
 ```
