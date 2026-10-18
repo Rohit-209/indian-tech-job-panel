@@ -1,4 +1,4 @@
-"""Run every extractor over the full history, in order.
+"""Run every extractor (skills, titles, geography, salary) over the full history.
 
 Each extractor is a replay (recompute everything, replace its outputs), so
 this is safe to run any number of times and is what the daily cron calls
@@ -17,7 +17,7 @@ import os
 import psycopg
 from dotenv import load_dotenv
 
-from extraction import geography, skills, titles
+from extraction import geography, salary, skills, titles
 
 
 def main() -> int:
@@ -33,6 +33,8 @@ def main() -> int:
         titles.replay(conn, method=method, dry_run=args.dry_run)
         print()
         geography.replay(conn, dry_run=args.dry_run)
+        print()
+        salary.replay(conn, dry_run=args.dry_run)
         if not args.dry_run:
             with conn.transaction(), conn.cursor() as cur:
                 cur.execute("UPDATE postings SET extracted_at = NOW()")

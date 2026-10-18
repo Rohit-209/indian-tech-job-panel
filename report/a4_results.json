@@ -1,0 +1,261 @@
+{
+  "n": 586,
+  "disclosed": 22,
+  "rate": 0.03754266211604096,
+  "rate_ci": [
+    0.024921341008643336,
+    0.056187672542274206
+  ],
+  "in_scope": {
+    "n": 270,
+    "disclosed": 6
+  },
+  "by_employer": [
+    {
+      "company": "Okta",
+      "postings": 190,
+      "disclosed": 0,
+      "rate": 0.0
+    },
+    {
+      "company": "Mongodb",
+      "postings": 119,
+      "disclosed": 0,
+      "rate": 0.0
+    },
+    {
+      "company": "Stripe",
+      "postings": 67,
+      "disclosed": 0,
+      "rate": 0.0
+    },
+    {
+      "company": "Gitlab",
+      "postings": 65,
+      "disclosed": 0,
+      "rate": 0.0
+    },
+    {
+      "company": "Twilio",
+      "postings": 37,
+      "disclosed": 0,
+      "rate": 0.0
+    },
+    {
+      "company": "Elastic",
+      "postings": 32,
+      "disclosed": 0,
+      "rate": 0.0
+    },
+    {
+      "company": "Airbnb",
+      "postings": 29,
+      "disclosed": 22,
+      "rate": 0.7586206896551724
+    },
+    {
+      "company": "Openai",
+      "postings": 15,
+      "disclosed": 0,
+      "rate": 0.0
+    },
+    {
+      "company": "Datadog",
+      "postings": 14,
+      "disclosed": 0,
+      "rate": 0.0
+    },
+    {
+      "company": "Cursor",
+      "postings": 8,
+      "disclosed": 0,
+      "rate": 0.0
+    },
+    {
+      "company": "Postman",
+      "postings": 6,
+      "disclosed": 0,
+      "rate": 0.0
+    },
+    {
+      "company": "Cloudflare",
+      "postings": 2,
+      "disclosed": 0,
+      "rate": 0.0
+    },
+    {
+      "company": "Deepgram",
+      "postings": 2,
+      "disclosed": 0,
+      "rate": 0.0
+    }
+  ],
+  "airbnb_engineering_table": [
+    [
+      3,
+      6
+    ],
+    [
+      19,
+      1
+    ]
+  ],
+  "airbnb_fisher_p": 0.0010994502748625685,
+  "airbnb_ranges": [
+    {
+      "title_raw": "Support Specialist, R1",
+      "title_family": "non_tech",
+      "seniority": "unspecified",
+      "salary_min": 500000.0,
+      "salary_max": 590000.0
+    },
+    {
+      "title_raw": "Senior Operations Specialist, Hosting",
+      "title_family": "non_tech",
+      "seniority": "senior",
+      "salary_min": 670000.0,
+      "salary_max": 840000.0
+    },
+    {
+      "title_raw": "Payments Specialist - Risk & Chargeback",
+      "title_family": "non_tech",
+      "seniority": "unspecified",
+      "salary_min": 690000.0,
+      "salary_max": 930000.0
+    },
+    {
+      "title_raw": "WFM Analyst",
+      "title_family": "non_tech",
+      "seniority": "unspecified",
+      "salary_min": 770000.0,
+      "salary_max": 970000.0
+    },
+    {
+      "title_raw": "Senior Social Media Associate",
+      "title_family": "non_tech",
+      "seniority": "senior",
+      "salary_min": 1260000.0,
+      "salary_max": 1800000.0
+    },
+    {
+      "title_raw": "Supervisor, Community Support",
+      "title_family": "non_tech",
+      "seniority": "unspecified",
+      "salary_min": 1370000.0,
+      "salary_max": 1790000.0
+    },
+    {
+      "title_raw": "Supervisor, Aircover",
+      "title_family": "non_tech",
+      "seniority": "unspecified",
+      "salary_min": 1370000.0,
+      "salary_max": 1790000.0
+    },
+    {
+      "title_raw": "Quality Insights Lead",
+      "title_family": "non_tech",
+      "seniority": "staff",
+      "salary_min": 1610000.0,
+      "salary_max": 2110000.0
+    },
+    {
+      "title_raw": "Supervisor - Investigations and Resolutions and Law Enforcement Operations",
+      "title_family": "non_tech",
+      "seniority": "unspecified",
+      "salary_min": 1610000.0,
+      "salary_max": 2110000.0
+    },
+    {
+      "title_raw": "Supervisor, Hosting",
+      "title_family": "non_tech",
+      "seniority": "unspecified",
+      "salary_min": 1610000.0,
+      "salary_max": 2300000.0
+    },
+    {
+      "title_raw": "Office Manager, Gurugram",
+      "title_family": "non_tech",
+      "seniority": "unspecified",
+      "salary_min": 1610000.0,
+      "salary_max": 2300000.0
+    },
+    {
+      "title_raw": "Supervisor, Payment Compliance - KYC",
+      "title_family": "non_tech",
+      "seniority": "unspecified",
+      "salary_min": 1750000.0,
+      "salary_max": 2180000.0
+    },
+    {
+      "title_raw": "Market Manager",
+      "title_family": "non_tech",
+      "seniority": "manager",
+      "salary_min": 1750000.0,
+      "salary_max": 2500000.0
+    },
+    {
+      "title_raw": "Senior Analyst, Advanced Analytics - Gurugram",
+      "title_family": "data_analytics",
+      "seniority": "senior",
+      "salary_min": 1960000.0,
+      "salary_max": 2800000.0
+    },
+    {
+      "title_raw": "Senior Analyst, Advanced Analytics",
+      "title_family": "data_analytics",
+      "seniority": "senior",
+      "salary_min": 1960000.0,
+      "salary_max": 2800000.0
+    },
+    {
+      "title_raw": "Software Engineer, Guest & Host",
+      "title_family": "software_engineering",
+      "seniority": "unspecified",
+      "salary_min": 3050000.0,
+      "salary_max": 4350000.0
+    },
+    {
+      "title_raw": "Lead Advanced Analytics, Community Support",
+      "title_family": "data_analytics",
+      "seniority": "staff",
+      "salary_min": 3080000.0,
+      "salary_max": 4400000.0
+    },
+    {
+      "title_raw": "Lead - Advanced Analytics, Gurgaon",
+      "title_family": "data_analytics",
+      "seniority": "staff",
+      "salary_min": 3080000.0,
+      "salary_max": 4400000.0
+    },
+    {
+      "title_raw": "Quality Assurance & Standards Manager",
+      "title_family": "qa_testing",
+      "seniority": "manager",
+      "salary_min": 3850000.0,
+      "salary_max": 5500000.0
+    },
+    {
+      "title_raw": "Senior Software Engineer(AI/ML), Trust",
+      "title_family": "ml_engineering",
+      "seniority": "senior",
+      "salary_min": 4500000.0,
+      "salary_max": 6500000.0
+    },
+    {
+      "title_raw": "Senior Manager, Safety",
+      "title_family": "non_tech",
+      "seniority": "manager",
+      "salary_min": 4900000.0,
+      "salary_max": 7000000.0
+    },
+    {
+      "title_raw": "Staff Platform Manager, Loyalty Platform Lead (Product Management)",
+      "title_family": "product_design",
+      "seniority": "manager",
+      "salary_min": 5600000.0,
+      "salary_max": 8000000.0
+    }
+  ],
+  "range_width_median_pct": 42.85714285714286
+}
