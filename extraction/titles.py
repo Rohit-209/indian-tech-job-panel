@@ -380,6 +380,28 @@ def _report(assigned: dict[str, tuple[str, str]]) -> None:
     print(f"\n  in scope (technical IC): {k} ({k / n:.0%})")
 
 
+def replay(conn, method: str = "rules", dry_run: bool = False, postings=None) -> None:
+    """Assign title_family / seniority to every posting with the chosen classifier."""
+    from extraction import titles_llm
+
+    postings = postings if postings is not None else _fetch_postings(conn)
+    if method == "llm":
+        cache = titles_llm.load_cache(conn)
+        missing = sum(titles_llm.title_key(c, t) not in cache for _k, c, t in postings)
+        if missing:
+            raise SystemExit(f"{missing} postings have uncached titles — run --label-llm")
+        assigned = {k: cache[titles_llm.title_key(c, t)] for k, c, t in postings}
+    else:
+        assigned = {k: classify_rules(t) for k, _c, t in postings}
+
+    _report(assigned)
+    if dry_run:
+        print("\n(dry run — postings unchanged)")
+        return
+    _write_titles(conn, [(k, f, s) for k, (f, s) in assigned.items()])
+    print(f"\nwrote title_family/seniority for {len(assigned)} postings ({method})")
+
+
 def main() -> int:
     import psycopg
     from dotenv import load_dotenv
@@ -424,21 +446,7 @@ def main() -> int:
                   f" prompt v{titles_llm.PROMPT_VERSION})")
             return 0
 
-        if args.method == "llm":
-            cache = titles_llm.load_cache(conn)
-            missing = sum(titles_llm.title_key(c, t) not in cache for _k, c, t in postings)
-            if missing:
-                raise SystemExit(f"{missing} postings have uncached titles — run --label-llm")
-            assigned = {k: cache[titles_llm.title_key(c, t)] for k, c, t in postings}
-        else:
-            assigned = {k: classify_rules(t) for k, _c, t in postings}
-
-        _report(assigned)
-        if args.dry_run:
-            print("\n(dry run — postings unchanged)")
-            return 0
-        _write_titles(conn, [(k, f, s) for k, (f, s) in assigned.items()])
-        print(f"\nwrote title_family/seniority for {len(assigned)} postings ({args.method})")
+        replay(conn, method=args.method, dry_run=args.dry_run, postings=postings)
     return 0
 
 

@@ -36,6 +36,11 @@ jobs:
       - name: Run collectors
         run: python run_collectors.py
 
+      # Full replay of skills, titles and geography. Skipped if collection
+      # failed, so a bad fetch never triggers a rewrite of extracted fields.
+      - name: Run extraction
+        run: python -m extraction
+
       - name: Run assertions
         if: always()   # run even if collectors non-zero, so we see DB-state
         run: python -m quality.assertions

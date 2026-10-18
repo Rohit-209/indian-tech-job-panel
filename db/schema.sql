@@ -51,6 +51,12 @@ CREATE TABLE IF NOT EXISTS postings (
     )
 );
 
+-- Added in Phase 2 (extraction/geography.py). ALTER keeps re-runs safe on
+-- the live table.
+ALTER TABLE postings ADD COLUMN IF NOT EXISTS cities TEXT[];
+ALTER TABLE postings ADD COLUMN IF NOT EXISTS is_multi_country BOOLEAN;
+ALTER TABLE postings ADD COLUMN IF NOT EXISTS workplace_source TEXT;  -- ats_field | li_tag | location | phrase | company_policy
+
 CREATE INDEX IF NOT EXISTS postings_source_first_seen_idx
     ON postings (source, first_seen);
 CREATE INDEX IF NOT EXISTS postings_is_active_idx

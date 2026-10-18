@@ -97,6 +97,12 @@ python -m extraction.titles --label-llm             # fill Gemini cache (needs G
 python -m extraction.titles --evaluate              # score both vs data/title_labels.csv
 python -m extraction.titles --method rules          # write title_family/seniority
 
+# Geography: canonical city (NCR collapsed), remote/hybrid with signal source
+python -m extraction.geography --dry-run
+
+# All extractors in order (what the daily cron runs after collection)
+python -m extraction
+
 # Tests
 pip install -e '.[dev]' && pytest
 ```

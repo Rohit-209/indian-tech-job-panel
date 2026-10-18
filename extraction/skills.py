@@ -204,6 +204,30 @@ def _explain(postings, dictionary: SkillDictionary, slug: str, limit: int) -> No
             break
 
 
+def replay(conn, dry_run: bool = False, postings=None, dictionary=None) -> None:
+    """Recompute skills for every posting and replace posting_skills."""
+    dictionary = dictionary or load_dictionary()
+    postings = postings if postings is not None else _fetch_postings(conn)
+    boilerplate = _boilerplate_for(postings)
+    results = {
+        key: extract_skills(
+            posting_text(title, desc, boilerplate.get((company or "").lower())),
+            company,
+            dictionary,
+        )
+        for key, company, title, desc in postings
+    }
+    titles = {key: title for key, _c, title, _d in postings}
+    _report(results, titles, dictionary.version)
+
+    if dry_run:
+        print("\n(dry run — posting_skills unchanged)")
+        return
+    rows = [(key, slug) for key, skills in results.items() for slug in sorted(skills)]
+    _replace_posting_skills(conn, rows)
+    print(f"\nwrote {len(rows)} rows to posting_skills")
+
+
 def main() -> int:
     import psycopg
     from dotenv import load_dotenv
@@ -225,31 +249,11 @@ def main() -> int:
             _explain(postings, dictionary, args.explain, args.limit)
             return 0
 
-        boilerplate = _boilerplate_for(postings)
         if args.boilerplate:
-            _print_boilerplate(postings, boilerplate)
+            _print_boilerplate(postings, _boilerplate_for(postings))
             return 0
-
-        results = {
-            key: extract_skills(
-                posting_text(title, desc, boilerplate.get((company or "").lower())),
-                company,
-                dictionary,
-            )
-            for key, company, title, desc in postings
-        }
-        titles = {key: title for key, _c, title, _d in postings}
-        _report(results, titles, dictionary.version)
-
-        if args.dry_run:
-            print("\n(dry run — posting_skills unchanged)")
-            return 0
-
-        rows = [(key, slug) for key, skills in results.items() for slug in sorted(skills)]
-        _replace_posting_skills(conn, rows)
-        print(f"\nwrote {len(rows)} rows to posting_skills")
+        replay(conn, dry_run=args.dry_run, postings=postings, dictionary=dictionary)
     return 0
-
 
 if __name__ == "__main__":
     raise SystemExit(main())
