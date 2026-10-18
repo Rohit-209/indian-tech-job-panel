@@ -21,7 +21,7 @@ _Will be published as a static report on completion. Link goes here._
 
 ## Data & methodology
 
-Full details in [`DATA_DICTIONARY.md`](./DATA_DICTIONARY.md) (published week 2).
+Full details in [`DATA_DICTIONARY.md`](./DATA_DICTIONARY.md): every table and field, null semantics, vocabularies, known issues and coverage.
 
 **Scope:** Full-time technical individual-contributor roles (software engineering, data, analytics, ML) posted by companies hiring in India.
 

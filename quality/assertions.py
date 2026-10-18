@@ -1,4 +1,4 @@
-"""Data-quality assertions that run after each collector cycle.
+"""Data-quality assertions that run after each collector + extraction cycle.
 
 Fail loudly (non-zero exit) so the GitHub Action emails us. Many of these
 duplicate DB-level CHECK constraints — that's deliberate. The CHECKs prevent
@@ -15,6 +15,8 @@ from dataclasses import dataclass
 import psycopg
 import structlog
 from dotenv import load_dotenv
+
+from extraction.titles import FAMILIES, SENIORITIES
 
 load_dotenv()
 log = structlog.get_logger()
@@ -77,6 +79,54 @@ ASSERTIONS: list[tuple[str, str]] = [
         WHERE salary_min IS NOT NULL
           AND salary_max IS NOT NULL
           AND salary_min > salary_max
+        """,
+    ),
+    # --- Extracted fields (python -m extraction runs before these) ----------
+    # Each one backs a promise made in DATA_DICTIONARY.md.
+    (
+        "closure_after_last_sighting",
+        # closed_on == last_seen is tolerated: panel day 1 had two runs, and
+        # the second "closed" five postings the first had just seen.
+        "SELECT COUNT(*) FROM postings WHERE closed_on < last_seen",
+    ),
+    (
+        "title_family_in_vocabulary",
+        "SELECT COUNT(*) FROM postings WHERE extracted_at IS NOT NULL"
+        " AND (title_family IS NULL OR title_family NOT IN ("
+        + ", ".join(f"'{f}'" for f in FAMILIES) + "))",
+    ),
+    (
+        "seniority_in_vocabulary",
+        "SELECT COUNT(*) FROM postings WHERE extracted_at IS NOT NULL"
+        " AND (seniority IS NULL OR seniority NOT IN ("
+        + ", ".join(f"'{s}'" for s in SENIORITIES) + "))",
+    ),
+    (
+        "workplace_fields_consistent",
+        # Unknown workplace is NULL in all three columns together; known is
+        # exactly one of remote / hybrid / onsite (both flags false).
+        """
+        SELECT COUNT(*) FROM postings
+        WHERE (is_remote IS NULL) <> (workplace_source IS NULL)
+           OR (is_remote IS NULL) <> (is_hybrid IS NULL)
+           OR (is_remote AND is_hybrid)
+        """,
+    ),
+    (
+        "city_is_first_of_cities",
+        """
+        SELECT COUNT(*) FROM postings
+        WHERE extracted_at IS NOT NULL
+          AND ((city IS NULL) <> (cardinality(cities) = 0)
+               OR (city IS NOT NULL AND city <> cities[1]))
+        """,
+    ),
+    (
+        "salary_has_currency_and_period",
+        """
+        SELECT COUNT(*) FROM postings
+        WHERE salary_max IS NOT NULL
+          AND (salary_currency IS NULL OR salary_period IS DISTINCT FROM 'annual')
         """,
     ),
 ]
