@@ -1,0 +1,95 @@
+sim,company,kind,gap_days,earlier,later,title_a,title_b
+0.9983481865090106,Okta,multi_location,,greenhouse:8248830,greenhouse:8248800,"Enterprise Account Executive, Delhi","Enterprise Account Executive, Mumbai"
+0.9999999999999998,Okta,multi_location,,greenhouse:8248830,greenhouse:8003027,"Enterprise Account Executive, Delhi","Enterprise Account Executive, Bengaluru"
+0.9983481865090106,Okta,multi_location,,greenhouse:8248800,greenhouse:8003027,"Enterprise Account Executive, Mumbai","Enterprise Account Executive, Bengaluru"
+0.9603414241181417,Okta,multi_level,,greenhouse:7741663,greenhouse:8203481,Principal Software Engineer,Senior Software Engineer - Fullstack
+0.9737766514195518,Okta,multi_level,,greenhouse:8071508,greenhouse:8071502,Principal Software Engineer,Staff Software Engineer
+0.9684585626840138,Okta,multi_level,,greenhouse:8007078,greenhouse:8102892,Principal Software Engineer - macOS,"Staff Software Engineer, macOS"
+1.0,Okta,multi_level,,greenhouse:8007078,greenhouse:8007089,Principal Software Engineer - macOS,Staff Software Engineer - macOS
+0.9938203621585661,Okta,multi_level,,greenhouse:7902410,greenhouse:8229910,Senior UI Software Engineer,Principal UI Software Engineer
+0.9719381605717592,Okta,repost,1.0,greenhouse:7582967,greenhouse:7731263,Senior Data Analyst,Senior Data Analyst
+0.9999999999999912,Okta,multi_location,,greenhouse:7648985,greenhouse:8132163,Senior Data Engineer,Senior Data Engineer
+1.0,Okta,sequential_other,25.0,greenhouse:8102363,greenhouse:8159014,Senior Software Engineer - (Java & DSA),Senior Java Engineer (Design & DSA)
+1.0,Okta,sequential_other,33.0,greenhouse:8102359,greenhouse:8159014,Senior Software Engineer - (Java & DSA),Senior Java Engineer (Design & DSA)
+1.0000000000000002,Okta,multi_level,,greenhouse:8242984,greenhouse:8263918,Senior Site Reliability Engineer,Senior Software Engineer - SRE
+1.0000000000000002,Okta,multi_level,,greenhouse:8078730,greenhouse:8242984,Senior Site Reliability Engineer (CI-CD/CTAP/Delivery team),Senior Site Reliability Engineer
+1.0000000000000013,Okta,multi_level,,greenhouse:8015032,greenhouse:8255904,Senior Site Reliability Engineer,"Senior Site Reliability Engineer (K8s, Terraform, Python)"
+0.9908705553277899,Okta,multi_level,,greenhouse:8015032,greenhouse:8255902,Senior Site Reliability Engineer,Staff Site Reliability Engineer
+0.9908705553277899,Okta,multi_level,,greenhouse:7840544,greenhouse:8015032,Staff Site Reliability Engineer,Senior Site Reliability Engineer
+1.0000000000000013,Okta,multi_level,,greenhouse:8090568,greenhouse:8015032,Staff Site Reliability Engineer - Ecosystem,Senior Site Reliability Engineer
+0.9908705553277899,Okta,multi_level,,greenhouse:8255904,greenhouse:8255902,"Senior Site Reliability Engineer (K8s, Terraform, Python)",Staff Site Reliability Engineer
+0.9908705553277899,Okta,multi_level,,greenhouse:7840544,greenhouse:8255904,Staff Site Reliability Engineer,"Senior Site Reliability Engineer (K8s, Terraform, Python)"
+1.0000000000000013,Okta,sequential_other,9.0,greenhouse:8090568,greenhouse:8255904,Staff Site Reliability Engineer - Ecosystem,"Senior Site Reliability Engineer (K8s, Terraform, Python)"
+0.996157131399291,Okta,multi_location,,greenhouse:8258817,greenhouse:8263827,Senior  Software Engineer,Senior Software Engineer
+0.996330647633714,Okta,multi_level,,greenhouse:8222464,greenhouse:8239278,"Senior Software Engineer, Lifecycle Management",Senior Software Engineer
+0.9640638910206951,Okta,multi_level,,greenhouse:8053763,greenhouse:8223817,Staff Software Engineer-Salesforce,Senior Software Engineer Salesforce
+0.9640638910206951,Okta,sequential_other,11.0,greenhouse:8087945,greenhouse:8223817,Staff Software Engineer-Salesforce,Senior Software Engineer Salesforce
+1.0000000000000002,Okta,sequential_other,7.0,greenhouse:8078730,greenhouse:8263918,Senior Site Reliability Engineer (CI-CD/CTAP/Delivery team),Senior Software Engineer - SRE
+0.9532789619581279,Okta,multi_level,,greenhouse:7765038,greenhouse:8081016,Senior Software Engineer – Tooling & Platform (Terraform),Staff Software Engineer
+0.9812171946739827,Okta,multi_level,,greenhouse:7882676,greenhouse:7771673,"Software Architect, Java Backend","Software Architect, Lifecycle Management"
+1.000000000000001,Okta,repost,3.0,greenhouse:8064221,greenhouse:8168822,"Solutions Engineer, Okta","Solutions Engineer, Okta"
+0.9999999999999999,Okta,sequential_other,16.0,greenhouse:8087718,greenhouse:8242975,Staff Site Reliability Engineer,Staff Site Reliability Engineer
+0.9999999999999999,Okta,sequential_other,16.0,greenhouse:8059472,greenhouse:8242975,Staff Site Reliability Engineer,Staff Site Reliability Engineer
+1.000000000000001,Okta,multi_location,,greenhouse:7840544,greenhouse:8255902,Staff Site Reliability Engineer,Staff Site Reliability Engineer
+0.9908705553277899,Okta,sequential_other,9.0,greenhouse:8090568,greenhouse:8255902,Staff Site Reliability Engineer - Ecosystem,Staff Site Reliability Engineer
+1.0000000000000002,Okta,multi_location,,greenhouse:8220634,greenhouse:8220649,Staff Software Engineer,Staff Software Engineer
+1.0000000000000002,Okta,multi_location,,greenhouse:8220634,greenhouse:8220655,Staff Software Engineer,Staff Software Engineer
+1.0000000000000002,Okta,multi_location,,greenhouse:8220649,greenhouse:8220655,Staff Software Engineer,Staff Software Engineer
+0.9929396008074143,Okta,multi_level,,greenhouse:6879868,greenhouse:8236504,Staff Software Engineer - Lifecycle Management,Staff Software Engineer
+0.997862664584708,Okta,sequential_other,12.0,greenhouse:7882710,greenhouse:8236504,Staff Software Engineer - Lifecycle Management,Staff Software Engineer
+1.0000000000000018,Okta,multi_level,,greenhouse:7703326,greenhouse:7703330,"Staff Software Engineer, Developer Experience","Staff Software Engineer, SDKs & Open Source"
+0.9937608909944933,Okta,multi_location,,greenhouse:6879868,greenhouse:7882710,Staff Software Engineer - Lifecycle Management,Staff Software Engineer - Lifecycle Management
+0.9684585626840138,Okta,sequential_other,1.0,greenhouse:8007089,greenhouse:8102892,Staff Software Engineer - macOS,"Staff Software Engineer, macOS"
+1.0000000000000027,Okta,multi_location,,greenhouse:8087945,greenhouse:8053763,Staff Software Engineer-Salesforce,Staff Software Engineer-Salesforce
+0.9920931672013849,Mongodb,multi_location,,greenhouse:7318558,greenhouse:7318466,Account Development Representative,Account Development Representative
+0.9842604728025754,Mongodb,multi_location,,greenhouse:8205430,greenhouse:8238617,Associate TSE II,Associate TSE II
+0.9530441223724969,Mongodb,multi_location,,greenhouse:8089396,greenhouse:8238617,Associate TSE II,Associate TSE II
+0.997510324642674,Mongodb,multi_level,,greenhouse:8170631,greenhouse:8238617,Technical Services Engineer,Associate TSE II
+0.986720407550855,Mongodb,multi_level,,greenhouse:8170631,greenhouse:8205430,Technical Services Engineer,Associate TSE II
+0.9558778991135941,Mongodb,multi_location,,greenhouse:8036348,greenhouse:7778975,Senior Administrator - Business Systems,Senior Administrator - Business Systems
+0.9906363512219368,Mongodb,multi_level,,greenhouse:8221293,greenhouse:8221290,Senior Engineer - Enterprise Architecture,Software Engineer 3 - Enterprise Architecture
+1.0000000000000009,Mongodb,multi_level,,greenhouse:8008794,greenhouse:8018423,Senior Engineer - GTM Tech,Senior Salesforce Engineer
+0.9678545209652512,Mongodb,sequential_other,13.0,greenhouse:7590547,greenhouse:8239745,"Lead, Engineering","Senior Engineering Manager, Atlas Agent Engine"
+0.9705937929409556,Mongodb,multi_level,,greenhouse:7590644,greenhouse:8178900,"Senior Software Engineer, Atlas Agent Engine",Senior Software Engineer
+0.9705937929409556,Mongodb,multi_location,,greenhouse:8178900,greenhouse:8222977,Senior Software Engineer,Senior Software Engineer
+0.9517023182738925,Mongodb,multi_level,,greenhouse:8106099,greenhouse:8111979,"Senior Software Engineer, AI Builder Experience (ABX)","Software Engineer 3, AI Builder Experience"
+0.9999999999999976,Mongodb,multi_level,,greenhouse:7590644,greenhouse:8222977,"Senior Software Engineer, Atlas Agent Engine",Senior Software Engineer
+1.0000000000000013,Mongodb,multi_level,,greenhouse:8262077,greenhouse:8242325,"Senior Specialist 2, Payroll","Senior Specialist, Payroll"
+0.9634406506616573,Mongodb,multi_level,,greenhouse:7590587,greenhouse:8243327,"Staff Engineer, Atlas Agent Engine","Senior Staff Engineer, Atlas Agent Engine"
+0.9984162931813995,Mongodb,repost,1.0,greenhouse:8161336,greenhouse:8239047,Software Engineer 3,Software Engineer 3
+0.9999999999999923,Mongodb,repost,1.0,greenhouse:8167389,greenhouse:8239047,Software Engineer 3,Software Engineer 3
+0.9961017328952131,Mongodb,multi_location,,greenhouse:8120184,greenhouse:8213069,Technical Account Manager,Technical Account Manager
+0.9968855877261162,Gitlab,multi_location,,greenhouse:8775507002,greenhouse:8736877002,"Intermediate Backend Engineer, India",Intermediate Backend Engineer
+0.9963551532828969,Gitlab,multi_location,,greenhouse:8716143002,greenhouse:8736862002,"Senior Backend Engineer, India",Senior Backend Engineer
+0.9989226942991588,Gitlab,multi_level,,greenhouse:8775136002,greenhouse:8781299002,"Staff Backend Engineer, India",Staff Software Engineer - NLP
+0.9922561441364904,Stripe,multi_level,,greenhouse:8076652,greenhouse:8066310,Fraud Operations Associate (Mandarin Speaking),Fraud Operations Associate SDC
+1.0000000000000016,Stripe,repost,13.0,greenhouse:8111799,greenhouse:8230294,Legal Operations Team Lead,Legal Operations Team Lead
+1.0000000000000029,Stripe,repost,1.0,greenhouse:8021192,greenhouse:8247120,Monetization Operations Analyst,Monetization Operations Analyst
+0.960457110553954,Elastic,multi_level,,greenhouse:8067061,greenhouse:8187356,Sales Development Representative (India Public Sector),Senior Sales Development Representative
+0.9921757756286089,Twilio,multi_level,,greenhouse:8258587,greenhouse:8258597,Machine Learning Engineer (L3),"Principal, Machine Learning Engineer (L5)"
+0.9608062801465831,Twilio,multi_level,,greenhouse:8258587,greenhouse:8258593,Machine Learning Engineer (L3),Staff Machine Learning Engineer (L4)
+0.957681376631396,Twilio,multi_level,,greenhouse:8258597,greenhouse:8258593,"Principal, Machine Learning Engineer (L5)",Staff Machine Learning Engineer (L4)
+0.9986271866540405,Twilio,repost,10.0,greenhouse:8079708,greenhouse:7917665,Technical Support Engineer 2,Technical Support Engineer 2
+0.9923600183433786,Datadog,multi_location,,greenhouse:8184643,greenhouse:8184565,Strategic Account Executive,Strategic Account Executive
+0.9913174264433134,Gitlab,multi_level,,greenhouse:8613165002,greenhouse:8623763002,Staff Fullstack Engineer - Data Products,Senior Fullstack Engineer - Data Products
+0.9999999999999998,Okta,repost,1.0,greenhouse:8077094,greenhouse:8212853,Staff Backend Engineer,Staff Backend Engineer
+1.0,Okta,repost,1.0,greenhouse:8102359,greenhouse:8102363,Senior Software Engineer - (Java & DSA),Senior Software Engineer - (Java & DSA)
+0.9984162931813995,Mongodb,multi_location,,greenhouse:8161336,greenhouse:8167389,Software Engineer 3,Software Engineer 3
+0.998101997200548,Mongodb,repost,6.0,greenhouse:8141879,greenhouse:7217699,Associate Recruiter,Associate Recruiter
+1.0000000000000007,Okta,repost,6.0,greenhouse:7894398,greenhouse:7894436,Senior Software Engineer (Core Frontier),Senior Software Engineer (Core Frontier)
+0.9908705553277899,Okta,multi_level,,greenhouse:7840544,greenhouse:8090568,Staff Site Reliability Engineer,Staff Site Reliability Engineer - Ecosystem
+1.0000000000000049,Okta,repost,1.0,greenhouse:8245295,greenhouse:8273327,Global Partner Program Operations Specialist,Global Partner Program Operations Specialist
+0.9964899924241007,Twilio,repost,1.0,greenhouse:8190889,greenhouse:8190887,"Software Engineer Intern (January 12th start, 23 weeks)","Software Engineer Intern (January 12th start, 23 weeks)"
+0.998493833480314,Okta,multi_level,,greenhouse:8127234,greenhouse:8077108,Principal Software Engineer - PAM,Staff Software Engineer - PAM
+0.9999999999999986,Okta,multi_level,,greenhouse:8119091,greenhouse:8119089,Senior Software Engineer (Node.js & React.js),Senior Fullstack Engineer [ Node.js Heavy + React ]
+0.9983178736523829,Okta,sequential_other,16.0,greenhouse:7780942,greenhouse:7780951,"Senior Engineer, FGA DevEx",Senior Software Engineer
+1.0000000000000018,Mongodb,multi_location,,greenhouse:7110155,greenhouse:8108390,Sales Support Associate,Sales Support Associate
+0.9999999999999999,Okta,multi_location,,greenhouse:8087718,greenhouse:8059472,Staff Site Reliability Engineer,Staff Site Reliability Engineer
+0.9989284229642272,Okta,multi_level,,greenhouse:8007071,greenhouse:8007085,Principal Software Engineer - Backend,Staff Software Engineer - Backend
+0.955254388663153,Okta,multi_level,,greenhouse:8146810,greenhouse:8147071,"Senior Software Engineer, Identity Administration","Staff Software Engineer, Identity Administration"
+0.9624232445145722,Okta,multi_level,,greenhouse:8146810,greenhouse:8147222,"Senior Software Engineer, Identity Administration","Staff Software Engineer, Identity Administration"
+0.9927952489579283,Okta,multi_location,,greenhouse:8147071,greenhouse:8147222,"Staff Software Engineer, Identity Administration","Staff Software Engineer, Identity Administration"
+1.0000000000000029,Okta,multi_level,,greenhouse:7855584,greenhouse:8035192,"Software Engineer Manager, Okta Developer Foundation","Software Engineer Manager, Okta Developer Foundation (ODF)"
+0.9999999999999799,Okta,multi_location,,greenhouse:8172960,greenhouse:8232607,Senior UX Researcher,Senior UX Researcher
+0.9554208768152861,Mongodb,multi_level,,greenhouse:8089396,greenhouse:8170631,Associate TSE II,Technical Services Engineer
+1.0000000000000009,Okta,multi_level,,greenhouse:7582318,greenhouse:7916607,"Staff Software Engineer, Java, Spring","Staff Software Engineer, Java, Spring (Backend)"

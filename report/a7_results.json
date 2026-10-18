@@ -1,0 +1,158 @@
+{
+  "n": 586,
+  "cross_company_max_sim": 0.25744298355404127,
+  "threshold": 0.95,
+  "t0.95": {
+    "pairs": 94,
+    "postings_with_sibling": 131,
+    "distinct_roles": 512,
+    "distinct_roles_in_scope": 219,
+    "in_scope": 270,
+    "pair_types": {
+      "multi_level": 44,
+      "multi_location": 25,
+      "repost": 13,
+      "sequential_other": 12
+    }
+  },
+  "by_employer": [
+    {
+      "company": "Okta",
+      "postings": 190,
+      "roles": 147,
+      "duplication": 0.226
+    },
+    {
+      "company": "Mongodb",
+      "postings": 119,
+      "roles": 101,
+      "duplication": 0.151
+    },
+    {
+      "company": "Stripe",
+      "postings": 67,
+      "roles": 64,
+      "duplication": 0.045
+    },
+    {
+      "company": "Gitlab",
+      "postings": 65,
+      "roles": 61,
+      "duplication": 0.062
+    },
+    {
+      "company": "Twilio",
+      "postings": 37,
+      "roles": 33,
+      "duplication": 0.108
+    },
+    {
+      "company": "Elastic",
+      "postings": 32,
+      "roles": 31,
+      "duplication": 0.031
+    },
+    {
+      "company": "Airbnb",
+      "postings": 29,
+      "roles": 29,
+      "duplication": 0.0
+    },
+    {
+      "company": "Openai",
+      "postings": 15,
+      "roles": 15,
+      "duplication": 0.0
+    },
+    {
+      "company": "Datadog",
+      "postings": 14,
+      "roles": 13,
+      "duplication": 0.071
+    },
+    {
+      "company": "Cursor",
+      "postings": 8,
+      "roles": 8,
+      "duplication": 0.0
+    },
+    {
+      "company": "Postman",
+      "postings": 6,
+      "roles": 6,
+      "duplication": 0.0
+    },
+    {
+      "company": "Cloudflare",
+      "postings": 2,
+      "roles": 2,
+      "duplication": 0.0
+    },
+    {
+      "company": "Deepgram",
+      "postings": 2,
+      "roles": 2,
+      "duplication": 0.0
+    }
+  ],
+  "t0.90": {
+    "pairs": 113,
+    "postings_with_sibling": 146,
+    "distinct_roles": 502,
+    "distinct_roles_in_scope": 213,
+    "in_scope": 270,
+    "pair_types": {
+      "multi_level": 59,
+      "multi_location": 26,
+      "sequential_other": 15,
+      "repost": 13
+    }
+  },
+  "same_key_relisted": 47,
+  "a2_sensitivity": {
+    "as_in_A2": {
+      "events": 250,
+      "km_median": 43.0,
+      "km_ci": [
+        33.0,
+        50.0
+      ],
+      "hr": {
+        "seniority=entry_mid": {
+          "hr": 1.791,
+          "lo": 1.024,
+          "hi": 3.133,
+          "p": 0.041
+        },
+        "workplace=onsite": {
+          "hr": 1.982,
+          "lo": 1.152,
+          "hi": 3.408,
+          "p": 0.013
+        }
+      }
+    },
+    "reposts_censored": {
+      "events": 237,
+      "km_median": 47.0,
+      "km_ci": [
+        38.0,
+        50.0
+      ],
+      "hr": {
+        "seniority=entry_mid": {
+          "hr": 1.772,
+          "lo": 0.986,
+          "hi": 3.185,
+          "p": 0.056
+        },
+        "workplace=onsite": {
+          "hr": 1.963,
+          "lo": 1.116,
+          "hi": 3.455,
+          "p": 0.019
+        }
+      }
+    }
+  }
+}

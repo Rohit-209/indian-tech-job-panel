@@ -14,11 +14,12 @@ and a joint test of all families gives p = 0.60. Those are wide intervals, not a
 infrastructure roles, for example, have HR 0.84 (0.46–1.52) within employers. Several effects that
 look significant in a pooled model (principal roles, NCR, remote work, number of skills listed)
 **shrink toward 1 once postings are compared within the same employer**, so they mostly reflect
-differences between companies. Two effects survive the within-employer comparison in every
-robustness specification. **Entry/mid-level roles close about twice as fast as senior ones**
-(HR 1.79, 1.02–3.13), though that group is mostly non-technical associate roles. **Onsite roles
-close faster than hybrid** (HR 1.98, 1.15–3.41), though only three employers vary their workplace
-model.
+differences between companies. **Onsite roles close about twice as fast as hybrid
+ones within the same employer** (HR 1.98, 1.15–3.41), consistently across every robustness
+specification, though only three employers vary their workplace model. **Entry/mid-level roles
+also close faster** (HR 1.79, 1.02–3.13), but this is borderline: once closures that were really
+reposts are censored (A7), the interval touches 1 (1.77, 0.99–3.19), and the group is mostly
+non-technical associate roles.
 
 ## Data and the three things that make the naive answer wrong
 
@@ -87,9 +88,11 @@ close first only somewhat better than chance.
 | `no_30d`: closures at 28–32 d censored | 586 / 231 | 2.11 (1.16–3.82) | 2.26 (1.27–4.01) |
 | `first_gap`: first disappearance = closure | 586 / 281 | 2.46 (1.43–4.25) | 1.80 (1.07–3.04) |
 | `born`: only postings seen at birth, no truncation | 207 / 50 | 6.85 (1.97–23.8) | 2.32 (0.71–7.58) |
+| reposts censored (from A7): 13 closures relisted under a new ID within 14 days | 586 / 237 | **1.77 (0.99–3.19)** | 1.96 (1.12–3.46) |
 
-Both effects keep their direction everywhere, and the intervals exclude 1 except onsite in the
-small `born` cohort.
+Both effects keep their direction everywhere. Onsite's interval excludes 1 in every spec except the
+small `born` cohort. Entry/mid's touches 1 once reposts are censored, so it's reported as
+suggestive. With reposts censored, the KM median is 47 days (38–50).
 
 **Proportional-hazards check.** lifelines can't compute Schoenfeld residuals with delayed entry, so
 the check runs on the `born` cohort. Pooled, PH is rejected (p < 0.05) for no-city, solutions,
@@ -112,8 +115,8 @@ onsite) violates PH.
 
 ## Threats to validity
 
-1. **Closure ≠ hire** (above). The 30-day and first-gap specifications bound two specific
-   alternatives; they can't rule out withdrawals.
+1. **Closure ≠ hire** (above). The 30-day, first-gap and repost-censored specifications bound
+   three specific alternatives; they can't rule out withdrawals.
 2. **Entry/mid is mostly non-technical**: 26 of 49 are non-tech associates (Stripe, MongoDB), 11 SWE,
    11 solutions. There are no junior *technical* IC postings in the panel, so "junior tech roles
    fill faster" is not something this data can say.
