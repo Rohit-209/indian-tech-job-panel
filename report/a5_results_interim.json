@@ -1,0 +1,503 @@
+{
+  "meta": {
+    "panel_start": "2026-09-07",
+    "panel_end": "2026-10-20",
+    "source_deaths": {
+      "Postman": "2026-09-16"
+    },
+    "born_labelled": 142,
+    "repost_closures": 13,
+    "split": "interim",
+    "train_end": "2026-09-27",
+    "horizon_days": 14
+  },
+  "n": {
+    "train": 91,
+    "train_pos": 13,
+    "test": 51,
+    "test_pos": 9
+  },
+  "single_feature": {
+    "chosen": "company",
+    "train_cv_roc_auc": {
+      "family": 0.342,
+      "seniority": 0.28,
+      "city": 0.387,
+      "workplace": 0.453,
+      "company": 0.572,
+      "skills_per_5": 0.541,
+      "log_desc_words": 0.538,
+      "log_company_open": 0.364,
+      "relisted": 0.539,
+      "is_multi_country": 0.446
+    }
+  },
+  "test": {
+    "majority": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.176,
+      "brier": 0.146
+    },
+    "single_feature": {
+      "roc_auc": 0.554,
+      "pr_auc": 0.236,
+      "brier": 0.141
+    },
+    "logistic": {
+      "roc_auc": 0.844,
+      "pr_auc": 0.674,
+      "brier": 0.11
+    },
+    "boosting": {
+      "roc_auc": 0.722,
+      "pr_auc": 0.312,
+      "brier": 0.157
+    },
+    "logistic_no_company": {
+      "roc_auc": 0.852,
+      "pr_auc": 0.73,
+      "brier": 0.099
+    }
+  },
+  "bootstrap": {
+    "models": {
+      "majority": {
+        "roc_auc": [
+          0.5,
+          0.5
+        ],
+        "pr_auc": [
+          0.176,
+          0.176
+        ],
+        "brier": [
+          0.146,
+          0.146
+        ]
+      },
+      "single_feature": {
+        "roc_auc": [
+          0.396,
+          0.714
+        ],
+        "pr_auc": [
+          0.174,
+          0.352
+        ],
+        "brier": [
+          0.133,
+          0.151
+        ]
+      },
+      "logistic": {
+        "roc_auc": [
+          0.698,
+          0.966
+        ],
+        "pr_auc": [
+          0.439,
+          0.902
+        ],
+        "brier": [
+          0.081,
+          0.139
+        ]
+      },
+      "boosting": {
+        "roc_auc": [
+          0.529,
+          0.894
+        ],
+        "pr_auc": [
+          0.228,
+          0.563
+        ],
+        "brier": [
+          0.116,
+          0.203
+        ]
+      },
+      "logistic_no_company": {
+        "roc_auc": [
+          0.69,
+          0.979
+        ],
+        "pr_auc": [
+          0.485,
+          0.942
+        ],
+        "brier": [
+          0.072,
+          0.127
+        ]
+      }
+    },
+    "lift": {
+      "single_feature - majority": {
+        "roc_auc": [
+          -0.104,
+          0.214
+        ],
+        "pr_auc": [
+          -0.002,
+          0.176
+        ],
+        "brier": [
+          -0.013,
+          0.005
+        ]
+      },
+      "logistic - single_feature": {
+        "roc_auc": [
+          0.115,
+          0.448
+        ],
+        "pr_auc": [
+          0.224,
+          0.611
+        ],
+        "brier": [
+          -0.058,
+          -0.004
+        ]
+      },
+      "boosting - logistic": {
+        "roc_auc": [
+          -0.283,
+          0.037
+        ],
+        "pr_auc": [
+          -0.549,
+          -0.057
+        ],
+        "brier": [
+          0.005,
+          0.091
+        ]
+      },
+      "logistic - logistic_no_company": {
+        "roc_auc": [
+          -0.087,
+          0.071
+        ],
+        "pr_auc": [
+          -0.185,
+          0.041
+        ],
+        "brier": [
+          0.001,
+          0.022
+        ]
+      }
+    }
+  },
+  "calibration": {
+    "logistic": {
+      "bins": [
+        {
+          "mean_pred": 0.048,
+          "observed": 0.0,
+          "n": 17
+        },
+        {
+          "mean_pred": 0.133,
+          "observed": 0.176,
+          "n": 17
+        },
+        {
+          "mean_pred": 0.355,
+          "observed": 0.353,
+          "n": 17
+        }
+      ],
+      "observed_rate": 0.176,
+      "mean_predicted": 0.178,
+      "slope": 1.45
+    },
+    "boosting": {
+      "bins": [
+        {
+          "mean_pred": 0.005,
+          "observed": 0.059,
+          "n": 17
+        },
+        {
+          "mean_pred": 0.039,
+          "observed": 0.059,
+          "n": 17
+        },
+        {
+          "mean_pred": 0.378,
+          "observed": 0.412,
+          "n": 17
+        }
+      ],
+      "observed_rate": 0.176,
+      "mean_predicted": 0.141,
+      "slope": 0.38
+    }
+  },
+  "importance": {
+    "logistic": {
+      "city": {
+        "mean": 0.158,
+        "sd": 0.046
+      },
+      "skills_per_5": {
+        "mean": 0.11,
+        "sd": 0.045
+      },
+      "log_company_open": {
+        "mean": 0.108,
+        "sd": 0.029
+      },
+      "workplace": {
+        "mean": 0.091,
+        "sd": 0.04
+      },
+      "company": {
+        "mean": 0.053,
+        "sd": 0.053
+      },
+      "seniority": {
+        "mean": 0.032,
+        "sd": 0.012
+      },
+      "family": {
+        "mean": 0.024,
+        "sd": 0.021
+      },
+      "is_multi_country": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "log_desc_words": {
+        "mean": -0.016,
+        "sd": 0.029
+      },
+      "relisted": {
+        "mean": -0.021,
+        "sd": 0.031
+      }
+    },
+    "boosting": {
+      "log_company_open": {
+        "mean": 0.136,
+        "sd": 0.1
+      },
+      "city": {
+        "mean": 0.133,
+        "sd": 0.035
+      },
+      "workplace": {
+        "mean": 0.072,
+        "sd": 0.055
+      },
+      "skills_per_5": {
+        "mean": 0.041,
+        "sd": 0.031
+      },
+      "seniority": {
+        "mean": 0.003,
+        "sd": 0.005
+      },
+      "is_multi_country": {
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "family": {
+        "mean": -0.001,
+        "sd": 0.017
+      },
+      "company": {
+        "mean": -0.001,
+        "sd": 0.003
+      },
+      "relisted": {
+        "mean": -0.044,
+        "sd": 0.018
+      },
+      "log_desc_words": {
+        "mean": -0.086,
+        "sd": 0.05
+      }
+    }
+  },
+  "rolling_origin": {
+    "folds": [
+      {
+        "train_end": "2026-09-27",
+        "test_end": "2026-10-04",
+        "n": 41,
+        "pos": 3
+      },
+      {
+        "train_end": "2026-10-04",
+        "test_end": "2026-10-11",
+        "n": 10,
+        "pos": 6
+      }
+    ],
+    "n": 51,
+    "pos": 9,
+    "metrics": {
+      "majority": {
+        "roc_auc": 0.5,
+        "pr_auc": 0.176,
+        "brier": 0.147
+      },
+      "single_feature": {
+        "roc_auc": 0.665,
+        "pr_auc": 0.488,
+        "brier": 0.13
+      },
+      "logistic": {
+        "roc_auc": 0.796,
+        "pr_auc": 0.661,
+        "brier": 0.107
+      },
+      "boosting": {
+        "roc_auc": 0.762,
+        "pr_auc": 0.386,
+        "brier": 0.141
+      },
+      "logistic_no_company": {
+        "roc_auc": 0.81,
+        "pr_auc": 0.72,
+        "brier": 0.096
+      }
+    },
+    "bootstrap": {
+      "models": {
+        "majority": {
+          "roc_auc": [
+            0.5,
+            0.5
+          ],
+          "pr_auc": [
+            0.176,
+            0.176
+          ],
+          "brier": [
+            0.147,
+            0.147
+          ]
+        },
+        "single_feature": {
+          "roc_auc": [
+            0.46,
+            0.853
+          ],
+          "pr_auc": [
+            0.259,
+            0.763
+          ],
+          "brier": [
+            0.111,
+            0.147
+          ]
+        },
+        "logistic": {
+          "roc_auc": [
+            0.59,
+            0.96
+          ],
+          "pr_auc": [
+            0.412,
+            0.898
+          ],
+          "brier": [
+            0.071,
+            0.142
+          ]
+        },
+        "boosting": {
+          "roc_auc": [
+            0.561,
+            0.915
+          ],
+          "pr_auc": [
+            0.257,
+            0.707
+          ],
+          "brier": [
+            0.095,
+            0.191
+          ]
+        },
+        "logistic_no_company": {
+          "roc_auc": [
+            0.577,
+            0.974
+          ],
+          "pr_auc": [
+            0.465,
+            0.937
+          ],
+          "brier": [
+            0.064,
+            0.13
+          ]
+        }
+      },
+      "lift": {
+        "single_feature - majority": {
+          "roc_auc": [
+            -0.04,
+            0.353
+          ],
+          "pr_auc": [
+            0.082,
+            0.586
+          ],
+          "brier": [
+            -0.036,
+            0.001
+          ]
+        },
+        "logistic - single_feature": {
+          "roc_auc": [
+            -0.058,
+            0.299
+          ],
+          "pr_auc": [
+            0.018,
+            0.383
+          ],
+          "brier": [
+            -0.046,
+            0.002
+          ]
+        },
+        "boosting - logistic": {
+          "roc_auc": [
+            -0.159,
+            0.098
+          ],
+          "pr_auc": [
+            -0.483,
+            0.067
+          ],
+          "brier": [
+            -0.008,
+            0.082
+          ]
+        },
+        "logistic - logistic_no_company": {
+          "roc_auc": [
+            -0.079,
+            0.05
+          ],
+          "pr_auc": [
+            -0.181,
+            0.025
+          ],
+          "brier": [
+            -0.001,
+            0.023
+          ]
+        }
+      }
+    }
+  }
+}

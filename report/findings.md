@@ -185,6 +185,27 @@ pre-declared as meaning *no shift larger than ~29 pp*, not *no drift*.
 
 ---
 
+## A5 — Can you predict, on day one, which postings close within 14 days? *(spec frozen; runs 2026-11-30)*
+
+**Question.** From what a posting shows on its first day, can a model tell which ones will be gone
+within two weeks?
+
+**Approach, fixed on 2026-10-20 before any test posting existed** ([design](A5_prediction.md)):
+- Postings seen from their first day; label = closed within 14 days, reposts not counted as closes.
+- Temporal split: train on weeks 1–8, test on postings first seen afterwards. Also a weekly
+  rolling-origin version.
+- The plan's ladder: majority → single best feature → logistic regression → gradient boosting,
+  with paired bootstrap CIs on each rung's lift. PR AUC, Brier and a calibration curve. No tuning.
+
+**What the design can and can't detect.** The test set will have about 10 positives, so only lifts
+of roughly 0.25 AUC are resolvable; the rolling pool (~35 positives) narrows that to about ±0.08.
+An interim pipeline check already shows the trap to watch: most of its lift came from one
+employer's remote postings, picked up through location rather than company.
+
+*Result: pending.*
+
+---
+
 ## A4 — Who discloses pay?
 
 **Question.** The plan was to model pay among disclosers, and the selection into disclosure.
@@ -269,4 +290,4 @@ python -m analysis.a3_drift               # on or after 2026-12-01
 ```
 
 *Draft status: findings 1–5 are from day 42 of 84 and will be re-run on the final panel. Pending:
-A3 result; title-classifier evaluation; final coverage refresh; dataset release decision.*
+A3 and A5 results; title-classifier holdout check; final coverage refresh; dataset release decision.*
