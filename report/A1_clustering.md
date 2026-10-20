@@ -98,9 +98,9 @@ DB, LangChain, prompt engineering).
    reduces the problem but can't remove it with only ~10 employers.
 2. **Mention ≠ requirement.** Skills come from a regex dictionary over the full description
    (boilerplate removed); "partner with SRE teams" still counts as `sre`.
-3. **Title assignment is provisional.** Families come from the rules classifier pending the
-   hand-label evaluation; rules and Gemini agree on 98% of in-scope decisions, so the sample barely
-   moves, but the "titles inside" column could shift slightly.
+3. **Title assignment uses the rules classifier.** On 150 labelled titles it is 95% right on family
+   with 98% precision and recall on the scope filter; Gemini was no better (McNemar p = 0.63), so
+   the rules stay. The score is in-sample; a holdout check is still to come.
 4. **Small n.** 213 postings and 108 features; the per-cluster tables rest on 26–67 postings each.
 5. **Cross-sectional over six weeks.** Postings open at any point in the window are pooled.
 

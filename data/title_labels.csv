@@ -1,151 +1,151 @@
 split,company,title,title_family,seniority,notes
-dev,Airbnb,"Engineering Manager, Tech Foundations",,,
-dev,Airbnb,"Office Manager, Gurugram",,,
-dev,Airbnb,"Senior Business Solutions Engineer, BizTech(LegalTech)",,,
-dev,Airbnb,Senior Social Media Associate,,,
-dev,Airbnb,"Senior Software Engineer(AI/ML), Trust",,,
-dev,Airbnb,"Staff Platform Manager, Loyalty Platform Lead (Product Management)",,,
-dev,Airbnb,Supervisor - Investigations and Resolutions and Law Enforcement Operations,,,
-dev,Airbnb,"Supervisor, Payment Compliance - KYC",,,
-dev,Airbnb,WFM Analyst,,,
-dev,Cloudflare,"Country Director, India",,,
-dev,Cursor,Field Engineer - India,,,
-dev,Cursor,Strategic Enterprise Account Executive - India,,,
-dev,Datadog,Commercial Account Executive,,,
-dev,Datadog,Customer Success Associate (Commercial Accounts),,,
-dev,Datadog,Partner Solutions Architect (India GSI),,,
-dev,Datadog,Senior Partner Manager - Channels (Indian GSI),,,
-dev,Deepgram,Senior Pre-Sales Solutions Engineer - India,,,
-dev,Elastic,Consulting Architect - Observability,,,
-dev,Elastic,Consulting Architect - Search,,,
-dev,Elastic,"Coordinator, Marketing Operations (Fixed Term)",,,
-dev,Elastic,Enterprise Account Executive (FSI) - Mumbai,,,
-dev,Elastic,"Marketing Coordinators, AMER (Fixed Term)",,,
-dev,Elastic,Pub Sec Account Executive III,,,
-dev,Elastic,"Sr Analyst, FP&A",,,
-dev,Gitlab,"Backend Engineer, Geo Team",,,
-dev,Gitlab,"Director of Engineering, Organizations & Cells",,,
-dev,Gitlab,Engineering Manager - Database Change Management,,,
-dev,Gitlab,Engineering Manager - Git & Gitaly Operations,,,
-dev,Gitlab,"Engineering Manager, SSCS: Supply Chain",,,
-dev,Gitlab,Intermediate Backend Engineer,,,
-dev,Gitlab,Intermediate Backend Engineer - Database Change Management,,,
-dev,Gitlab,Intermediate Support Engineer,,,
-dev,Gitlab,Principal Technical Program Manager,,,
-dev,Gitlab,"Recruiter, R&D",,,
-dev,Gitlab,"Senior Backend Engineer (Ruby on Rails), Plan: Planning Views",,,
-dev,Gitlab,Senior Backend Engineer - Platform Insights,,,
-dev,Gitlab,Senior Engineering Manager - Continuous Deployment,,,
-dev,Gitlab,Senior Frontend Engineer,,,
-dev,Gitlab,Senior Solutions Architect,,,
-dev,Gitlab,Staff Data Analyst,,,
-dev,Mongodb,Advisory Partner Solutions Architect,,,
-dev,Mongodb,"Associate, HR Shared Services",,,
-dev,Mongodb,Director of Global Security Operations,,,
-dev,Mongodb,"Engineering Manager, AI Builder Experience",,,
-dev,Mongodb,"Forward Deployed Engineer, Industry Solutions",,,
-dev,Mongodb,Principal Technologist / Field CTO,,,
-dev,Mongodb,Senior Administrator - Business Systems,,,
-dev,Mongodb,"Senior Director, Partner Specialists",,,
-dev,Mongodb,"Senior Manager, Revenue",,,
-dev,Mongodb,Senior Recruiter,,,
-dev,Mongodb,Senior Sales Compensation Engineer,,,
-dev,Mongodb,"Senior Specialist, EMEA Payroll",,,
-dev,Mongodb,"Software Engineer 3, AI Builder Experience",,,
-dev,Mongodb,"Specialist, Sales Performance",,,
-dev,Mongodb,Sr Finance Systems Admin (L1 Support & Admin),,,
-dev,Mongodb,Sr. Partner Marketing Manager,,,
-dev,Mongodb,"Staff Engineer, AMP",,,
-dev,Mongodb,Staff Forward Deployed Engineer,,,
-dev,Okta,Category Manager - Technology Sourcing,,,
-dev,Okta,Digital Solutions Manager (Recruiting Tech & Learning Platforms),,,
-dev,Okta,"Director, Site Reliability Engineering",,,
-dev,Okta,Engineering Architect  - DX/AX/UX,,,
-dev,Okta,Engineering Manager - Access Essentials - Core Product,,,
-dev,Okta,"Enterprise Account Executive, Delhi",,,
-dev,Okta,"Enterprise Account Executive, Mumbai",,,
-dev,Okta,Global Partner Program Operations Specialist,,,
-dev,Okta,"Manager, Engineering - Device Identity and Access",,,
-dev,Okta,Mobile Architect,,,
-dev,Okta,Principal Software Engineer - Backend,,,
-dev,Okta,Principal Software Engineer in Test,,,
-dev,Okta,Principal UI Software Engineer,,,
-dev,Okta,"Product Manager, Product Platform",,,
-dev,Okta,Senior  Software Engineer,,,
-dev,Okta,"Senior Data Analyst, Field Analytics",,,
-dev,Okta,Senior Data Engineer,,,
-dev,Okta,"Senior Engineer, FGA DevEx",,,
-dev,Okta,"Senior Financial Analyst, FP&A",,,
-dev,Okta,Senior Fullstack Engineer (Java + React.js),,,
-dev,Okta,Senior Fullstack Engineer (Java Heavy),,,
-dev,Okta,Senior Java Engineer (Design & DSA),,,
-dev,Okta,"Senior Product Manager, Data Platform",,,
-dev,Okta,Senior Site Reliability Engineer,,,
-dev,Okta,Senior Software Engineer (Java & DSA),,,
-dev,Okta,Senior Software Engineer (Node.js & React.js),,,
-dev,Okta,Senior Software Engineer in Test — macOS,,,
-dev,Okta,Senior Software Engineer – Tooling & Platform (Terraform),,,
-dev,Okta,Senior Software engineer - Advanced Threat Protection,,,
-dev,Okta,Senior Technical Writer,,,
-dev,Okta,"Software Architect, Lifecycle Management",,,
-dev,Okta,"Staff Data Analyst, People Analytics",,,
-dev,Okta,Staff Engineer - Fullstack,,,
-dev,Okta,Staff FullStack Engineer - Backend Focused (Java & React/Typescript),,,
-dev,Okta,Staff Network Engineer,,,
-dev,Okta,Staff Product Designer — AX & Growth (DLG),,,
-dev,Okta,Staff Software Engineer - Full Stack,,,
-dev,Okta,Staff Software Engineer - PAM,,,
-dev,Okta,Staff Software Engineer - macOS,,,
-dev,Okta,"Staff Software Engineer, Lifecycle Management",,,
-dev,Okta,"Staff Software Engineer, Platform & Infrastructure",,,
-dev,Okta,"Staff Software Engineer, macOS",,,
-dev,Okta,Staff Software Engineer-Salesforce,,,
-dev,Okta,Technical Account Manager,,,
-dev,Okta,Workday Extend Developer,,,
-dev,Openai,"Account Director, Digital Natives",,,
-dev,Openai,"Account Director, Large Enterprise",,,
-dev,Openai,Applied AI Architect,,,
-dev,Openai,"Executive Business Partner, India",,,
-dev,Openai,Partner AI Deployment Engineer - AWS,,,
-dev,Openai,Strategy & Operations Lead - India,,,
-dev,Postman,Enterprise Account Executive,,,
-dev,Postman,"Senior Engineer, IAM",,,
-dev,Postman,"Senior Engineer, Search",,,
-dev,Postman,"Senior Software Engineer, Client Platform",,,
-dev,Postman,Staff Engineer – Observability Platform,,,
-dev,Stripe,AR Analyst,,,
-dev,Stripe,Administrative Coordinator,,,
-dev,Stripe,Credit Risk Operations Associate,,,
-dev,Stripe,EDD Quality Associate,,,
-dev,Stripe,F&S COE Manager,,,
-dev,Stripe,Finance and Strategy Specialist,,,
-dev,Stripe,"Financial Analyst, Business F&S",,,
-dev,Stripe,Fraud Operations Associate (Mandarin Speaking),,,
-dev,Stripe,Fraud Operations Manager,,,
-dev,Stripe,Global People Operations - Systems Administrator,,,
-dev,Stripe,Marketing Services Program Manager,,,
-dev,Stripe,"Operations Associate, Financial Crimes EDD/PEP",,,
-dev,Stripe,Processing cost Analyst,,,
-dev,Stripe,"SDC Operations Manager, Financial Crimes (AML)",,,
-dev,Stripe,"Sales Leader, India",,,
-dev,Stripe,Seller Systems Team Lead (Night Shift),,,
-dev,Stripe,"Social Media, Customer Support Associate",,,
-dev,Stripe,"Software Engineer, Intern",,,
-dev,Stripe,"Staff Engineer, Payments",,,
-dev,Stripe,"Staff Engineer, Revenue & Finance Automation",,,
-dev,Stripe,Third Party Risk Analyst,,,
-dev,Twilio,Applications Engineer 2,,,
-dev,Twilio,Fast Track Onboarding Specialist 2,,,
-dev,Twilio,Machine Learning Engineer (L3),,,
-dev,Twilio,Onboarding Operations Specialist 1,,,
-dev,Twilio,Principal Engineer (L5),,,
-dev,Twilio,Product Operations Specialist L3,,,
-dev,Twilio,Senior Engineering Manager (L5),,,
-dev,Twilio,"Senior Manager, Accounts Payable",,,
-dev,Twilio,"Senior Manager, Machine Learning",,,
-dev,Twilio,"Senior Manager, Software Engineering (L5)",,,
-dev,Twilio,Senior Marketing Analyst,,,
-dev,Twilio,"Software Engineer Intern (January 12th start, 23 weeks)",,,
-dev,Twilio,Software Engineer L3,,,
-dev,Twilio,"Staff, Software Engineer (L4)",,,
-dev,Twilio,Technical Support Engineer 2,,,
+dev,Airbnb,"Engineering Manager, Tech Foundations",software_engineering,manager,labeller=claude
+dev,Airbnb,"Office Manager, Gurugram",non_tech,unspecified,"labeller=claude; reviewed=rohit; ? office manager read as admin IC, not people manager"
+dev,Airbnb,"Senior Business Solutions Engineer, BizTech(LegalTech)",software_engineering,senior,labeller=claude
+dev,Airbnb,Senior Social Media Associate,non_tech,senior,labeller=claude
+dev,Airbnb,"Senior Software Engineer(AI/ML), Trust",ml_engineering,senior,labeller=claude; reviewed=rohit; ? AI/ML SWE: ml vs swe
+dev,Airbnb,"Staff Platform Manager, Loyalty Platform Lead (Product Management)",product_design,staff,labeller=claude
+dev,Airbnb,Supervisor - Investigations and Resolutions and Law Enforcement Operations,non_tech,manager,labeller=claude
+dev,Airbnb,"Supervisor, Payment Compliance - KYC",non_tech,manager,labeller=claude
+dev,Airbnb,WFM Analyst,non_tech,unspecified,"labeller=claude; reviewed=rohit; ? workforce mgmt = ops, not data analytics"
+dev,Cloudflare,"Country Director, India",non_tech,director,labeller=claude
+dev,Cursor,Field Engineer - India,solutions_support,unspecified,labeller=claude
+dev,Cursor,Strategic Enterprise Account Executive - India,non_tech,unspecified,labeller=claude; spotcheck=rohit agree
+dev,Datadog,Commercial Account Executive,non_tech,unspecified,labeller=claude; spotcheck=rohit agree
+dev,Datadog,Customer Success Associate (Commercial Accounts),non_tech,junior,labeller=claude
+dev,Datadog,Partner Solutions Architect (India GSI),solutions_support,staff,labeller=claude
+dev,Datadog,Senior Partner Manager - Channels (Indian GSI),non_tech,senior,labeller=claude; spotcheck=rohit agree
+dev,Deepgram,Senior Pre-Sales Solutions Engineer - India,solutions_support,senior,labeller=claude
+dev,Elastic,Consulting Architect - Observability,solutions_support,staff,labeller=claude
+dev,Elastic,Consulting Architect - Search,solutions_support,staff,labeller=claude; spotcheck=rohit agree
+dev,Elastic,"Coordinator, Marketing Operations (Fixed Term)",non_tech,unspecified,labeller=claude; spotcheck=rohit agree
+dev,Elastic,Enterprise Account Executive (FSI) - Mumbai,non_tech,unspecified,labeller=claude
+dev,Elastic,"Marketing Coordinators, AMER (Fixed Term)",non_tech,unspecified,labeller=claude
+dev,Elastic,Pub Sec Account Executive III,non_tech,senior,labeller=claude
+dev,Elastic,"Sr Analyst, FP&A",non_tech,senior,labeller=claude; spotcheck=rohit agree
+dev,Gitlab,"Backend Engineer, Geo Team",software_engineering,unspecified,labeller=claude
+dev,Gitlab,"Director of Engineering, Organizations & Cells",software_engineering,director,labeller=claude
+dev,Gitlab,Engineering Manager - Database Change Management,software_engineering,manager,labeller=claude; spotcheck=rohit agree
+dev,Gitlab,Engineering Manager - Git & Gitaly Operations,software_engineering,manager,labeller=claude
+dev,Gitlab,"Engineering Manager, SSCS: Supply Chain",software_engineering,manager,labeller=claude; reviewed=rohit; ? supply-chain security product team: swe vs sec
+dev,Gitlab,Intermediate Backend Engineer,software_engineering,mid,labeller=claude
+dev,Gitlab,Intermediate Backend Engineer - Database Change Management,software_engineering,mid,labeller=claude
+dev,Gitlab,Intermediate Support Engineer,solutions_support,mid,labeller=claude
+dev,Gitlab,Principal Technical Program Manager,product_design,principal,labeller=claude
+dev,Gitlab,"Recruiter, R&D",non_tech,unspecified,labeller=claude
+dev,Gitlab,"Senior Backend Engineer (Ruby on Rails), Plan: Planning Views",software_engineering,senior,labeller=claude
+dev,Gitlab,Senior Backend Engineer - Platform Insights,software_engineering,senior,labeller=claude
+dev,Gitlab,Senior Engineering Manager - Continuous Deployment,software_engineering,manager,labeller=claude
+dev,Gitlab,Senior Frontend Engineer,software_engineering,senior,labeller=claude
+dev,Gitlab,Senior Solutions Architect,solutions_support,senior,labeller=claude; reviewed=rohit; ? senior + architect: took explicit Senior
+dev,Gitlab,Staff Data Analyst,data_analytics,staff,labeller=claude
+dev,Mongodb,Advisory Partner Solutions Architect,solutions_support,staff,labeller=claude
+dev,Mongodb,"Associate, HR Shared Services",non_tech,junior,labeller=claude
+dev,Mongodb,Director of Global Security Operations,security_engineering,director,labeller=claude; spotcheck=rohit agree
+dev,Mongodb,"Engineering Manager, AI Builder Experience",software_engineering,manager,labeller=claude
+dev,Mongodb,"Forward Deployed Engineer, Industry Solutions",solutions_support,unspecified,labeller=claude; spotcheck=rohit agree
+dev,Mongodb,Principal Technologist / Field CTO,solutions_support,principal,labeller=claude; spotcheck=rohit agree
+dev,Mongodb,Senior Administrator - Business Systems,non_tech,senior,labeller=claude; reviewed=rohit; ? business-systems admin (not developer)
+dev,Mongodb,"Senior Director, Partner Specialists",non_tech,director,labeller=claude
+dev,Mongodb,"Senior Manager, Revenue",non_tech,manager,labeller=claude
+dev,Mongodb,Senior Recruiter,non_tech,senior,labeller=claude
+dev,Mongodb,Senior Sales Compensation Engineer,software_engineering,senior,labeller=claude; reviewed=rohit; ? sales-comp systems engineer
+dev,Mongodb,"Senior Specialist, EMEA Payroll",non_tech,senior,labeller=claude
+dev,Mongodb,"Software Engineer 3, AI Builder Experience",software_engineering,senior,labeller=claude
+dev,Mongodb,"Specialist, Sales Performance",non_tech,unspecified,labeller=claude
+dev,Mongodb,Sr Finance Systems Admin (L1 Support & Admin),non_tech,senior,labeller=claude; reviewed=rohit; ? finance-systems admin; L1 is support tier not level
+dev,Mongodb,Sr. Partner Marketing Manager,non_tech,senior,labeller=claude
+dev,Mongodb,"Staff Engineer, AMP",software_engineering,staff,labeller=claude
+dev,Mongodb,Staff Forward Deployed Engineer,solutions_support,staff,labeller=claude
+dev,Okta,Category Manager - Technology Sourcing,non_tech,unspecified,labeller=claude
+dev,Okta,Digital Solutions Manager (Recruiting Tech & Learning Platforms),product_design,unspecified,labeller=claude; reviewed=rohit; ? internal recruiting-tech solutions manager
+dev,Okta,"Director, Site Reliability Engineering",sre_infra,director,labeller=claude
+dev,Okta,Engineering Architect  - DX/AX/UX,software_engineering,staff,labeller=claude; spotcheck=rohit agree
+dev,Okta,Engineering Manager - Access Essentials - Core Product,software_engineering,manager,labeller=claude
+dev,Okta,"Enterprise Account Executive, Delhi",non_tech,unspecified,labeller=claude; spotcheck=rohit agree
+dev,Okta,"Enterprise Account Executive, Mumbai",non_tech,unspecified,labeller=claude
+dev,Okta,Global Partner Program Operations Specialist,non_tech,unspecified,labeller=claude; spotcheck=rohit agree
+dev,Okta,"Manager, Engineering - Device Identity and Access",software_engineering,manager,labeller=claude
+dev,Okta,Mobile Architect,software_engineering,staff,labeller=claude
+dev,Okta,Principal Software Engineer - Backend,software_engineering,principal,labeller=claude
+dev,Okta,Principal Software Engineer in Test,qa_testing,principal,labeller=claude
+dev,Okta,Principal UI Software Engineer,software_engineering,principal,labeller=claude
+dev,Okta,"Product Manager, Product Platform",product_design,unspecified,labeller=claude
+dev,Okta,Senior  Software Engineer,software_engineering,senior,labeller=claude; spotcheck=rohit agree
+dev,Okta,"Senior Data Analyst, Field Analytics",data_analytics,senior,labeller=claude
+dev,Okta,Senior Data Engineer,data_engineering,senior,labeller=claude
+dev,Okta,"Senior Engineer, FGA DevEx",software_engineering,senior,labeller=claude
+dev,Okta,"Senior Financial Analyst, FP&A",non_tech,senior,labeller=claude
+dev,Okta,Senior Fullstack Engineer (Java + React.js),software_engineering,senior,labeller=claude
+dev,Okta,Senior Fullstack Engineer (Java Heavy),software_engineering,senior,labeller=claude
+dev,Okta,Senior Java Engineer (Design & DSA),software_engineering,senior,labeller=claude
+dev,Okta,"Senior Product Manager, Data Platform",product_design,senior,labeller=claude
+dev,Okta,Senior Site Reliability Engineer,sre_infra,senior,labeller=claude
+dev,Okta,Senior Software Engineer (Java & DSA),software_engineering,senior,labeller=claude
+dev,Okta,Senior Software Engineer (Node.js & React.js),software_engineering,senior,labeller=claude
+dev,Okta,Senior Software Engineer in Test — macOS,qa_testing,senior,labeller=claude
+dev,Okta,Senior Software Engineer – Tooling & Platform (Terraform),sre_infra,senior,"labeller=claude; reviewed=rohit; ? SWE title, Terraform platform tooling: sre vs swe"
+dev,Okta,Senior Software engineer - Advanced Threat Protection,software_engineering,senior,labeller=claude; reviewed=rohit; ? SWE on threat-protection product: swe vs sec
+dev,Okta,Senior Technical Writer,product_design,senior,labeller=claude
+dev,Okta,"Software Architect, Lifecycle Management",software_engineering,staff,labeller=claude
+dev,Okta,"Staff Data Analyst, People Analytics",data_analytics,staff,labeller=claude
+dev,Okta,Staff Engineer - Fullstack,software_engineering,staff,labeller=claude
+dev,Okta,Staff FullStack Engineer - Backend Focused (Java & React/Typescript),software_engineering,staff,labeller=claude; spotcheck=rohit agree
+dev,Okta,Staff Network Engineer,sre_infra,staff,labeller=claude
+dev,Okta,Staff Product Designer — AX & Growth (DLG),product_design,staff,labeller=claude; spotcheck=rohit agree
+dev,Okta,Staff Software Engineer - Full Stack,software_engineering,staff,labeller=claude
+dev,Okta,Staff Software Engineer - PAM,software_engineering,staff,labeller=claude
+dev,Okta,Staff Software Engineer - macOS,software_engineering,staff,labeller=claude
+dev,Okta,"Staff Software Engineer, Lifecycle Management",software_engineering,staff,labeller=claude
+dev,Okta,"Staff Software Engineer, Platform & Infrastructure",sre_infra,staff,labeller=claude; reviewed=rohit; ? platform & infrastructure: sre vs swe
+dev,Okta,"Staff Software Engineer, macOS",software_engineering,staff,labeller=claude
+dev,Okta,Staff Software Engineer-Salesforce,software_engineering,staff,labeller=claude
+dev,Okta,Technical Account Manager,solutions_support,unspecified,labeller=claude
+dev,Okta,Workday Extend Developer,software_engineering,unspecified,labeller=claude
+dev,Openai,"Account Director, Digital Natives",non_tech,director,labeller=claude; reviewed=rohit; ? Account Director is a sales IC title; literal rule says director
+dev,Openai,"Account Director, Large Enterprise",non_tech,director,labeller=claude; reviewed=rohit; ? same as above
+dev,Openai,Applied AI Architect,solutions_support,staff,labeller=claude; reviewed=rohit; ? customer-facing at OpenAI
+dev,Openai,"Executive Business Partner, India",non_tech,unspecified,labeller=claude
+dev,Openai,Partner AI Deployment Engineer - AWS,solutions_support,unspecified,labeller=claude
+dev,Openai,Strategy & Operations Lead - India,non_tech,staff,labeller=claude
+dev,Postman,Enterprise Account Executive,non_tech,unspecified,labeller=claude
+dev,Postman,"Senior Engineer, IAM",software_engineering,senior,labeller=claude; reviewed=rohit; ? IAM team: swe vs sec
+dev,Postman,"Senior Engineer, Search",software_engineering,senior,labeller=claude
+dev,Postman,"Senior Software Engineer, Client Platform",software_engineering,senior,labeller=claude
+dev,Postman,Staff Engineer – Observability Platform,sre_infra,staff,labeller=claude
+dev,Stripe,AR Analyst,non_tech,unspecified,labeller=claude
+dev,Stripe,Administrative Coordinator,non_tech,unspecified,labeller=claude
+dev,Stripe,Credit Risk Operations Associate,non_tech,junior,labeller=claude
+dev,Stripe,EDD Quality Associate,non_tech,junior,labeller=claude
+dev,Stripe,F&S COE Manager,non_tech,manager,labeller=claude
+dev,Stripe,Finance and Strategy Specialist,non_tech,unspecified,labeller=claude
+dev,Stripe,"Financial Analyst, Business F&S",non_tech,unspecified,labeller=claude
+dev,Stripe,Fraud Operations Associate (Mandarin Speaking),non_tech,junior,labeller=claude
+dev,Stripe,Fraud Operations Manager,non_tech,manager,labeller=claude
+dev,Stripe,Global People Operations - Systems Administrator,non_tech,unspecified,labeller=claude; reviewed=rohit; ? people-ops systems admin
+dev,Stripe,Marketing Services Program Manager,product_design,unspecified,labeller=claude
+dev,Stripe,"Operations Associate, Financial Crimes EDD/PEP",non_tech,junior,labeller=claude
+dev,Stripe,Processing cost Analyst,non_tech,unspecified,labeller=claude; spotcheck=rohit agree
+dev,Stripe,"SDC Operations Manager, Financial Crimes (AML)",non_tech,manager,labeller=claude
+dev,Stripe,"Sales Leader, India",non_tech,director,labeller=claude; reviewed=rohit; ? Sales Leader read as head of
+dev,Stripe,Seller Systems Team Lead (Night Shift),non_tech,manager,labeller=claude; reviewed=rohit; ? team lead of non-IC team
+dev,Stripe,"Social Media, Customer Support Associate",non_tech,junior,labeller=claude
+dev,Stripe,"Software Engineer, Intern",software_engineering,intern,labeller=claude
+dev,Stripe,"Staff Engineer, Payments",software_engineering,staff,labeller=claude
+dev,Stripe,"Staff Engineer, Revenue & Finance Automation",software_engineering,staff,labeller=claude
+dev,Stripe,Third Party Risk Analyst,non_tech,unspecified,labeller=claude; reviewed=rohit; ? third-party risk: compliance not security
+dev,Twilio,Applications Engineer 2,software_engineering,mid,labeller=claude; reviewed=rohit; ? applications engineer read as internal apps dev
+dev,Twilio,Fast Track Onboarding Specialist 2,non_tech,mid,labeller=claude
+dev,Twilio,Machine Learning Engineer (L3),ml_engineering,senior,labeller=claude
+dev,Twilio,Onboarding Operations Specialist 1,non_tech,junior,labeller=claude; spotcheck=rohit agree
+dev,Twilio,Principal Engineer (L5),software_engineering,principal,labeller=claude
+dev,Twilio,Product Operations Specialist L3,non_tech,senior,labeller=claude
+dev,Twilio,Senior Engineering Manager (L5),software_engineering,manager,labeller=claude
+dev,Twilio,"Senior Manager, Accounts Payable",non_tech,manager,labeller=claude
+dev,Twilio,"Senior Manager, Machine Learning",ml_engineering,manager,labeller=claude
+dev,Twilio,"Senior Manager, Software Engineering (L5)",software_engineering,manager,labeller=claude; spotcheck=rohit agree
+dev,Twilio,Senior Marketing Analyst,data_analytics,senior,labeller=claude; reviewed=rohit; ? marketing analyst counted as analytics
+dev,Twilio,"Software Engineer Intern (January 12th start, 23 weeks)",software_engineering,intern,labeller=claude
+dev,Twilio,Software Engineer L3,software_engineering,senior,labeller=claude
+dev,Twilio,"Staff, Software Engineer (L4)",software_engineering,staff,labeller=claude; spotcheck=rohit agree
+dev,Twilio,Technical Support Engineer 2,solutions_support,mid,labeller=claude

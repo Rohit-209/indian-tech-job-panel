@@ -246,9 +246,13 @@ These are the reasons not to over-read this report, in rough order of importance
    This was stated before the data existed, so a null can't be explained away afterwards.
 5. **Skills are dictionary matches, not requirements.** "Work with the SRE team" counts as SRE. The
    dictionary is versioned and every run reprocesses all history, but mention isn't demand.
-6. **Role classification is provisional.** Families come from a rules classifier awaiting
-   evaluation against 150 hand-labelled titles, and a Gemini alternative is cached for comparison.
-   The two agree on 98% of in-scope decisions, so the analysis sample is unlikely to move much.
+6. **Role classification is rules-based and checked once, in-sample.** On 150 labelled titles the
+   rules get family right 95% of the time and both fields 90%; Gemini gets 93% and 92%, no
+   significant difference (exact McNemar p = 0.63). The rules are more precise on the scope filter
+   (98% vs 93%), so the analyses keep them. Two caveats cut in opposite directions: the rules were
+   tuned on these same titles (favours rules), and the labels were drafted by an LLM (Claude), then
+   reviewed by me — every judgment call plus a random 20 of the rest, with full agreement (favours
+   Gemini). A holdout of titles first seen after the rules were frozen is the fair test.
 7. **No junior technical roles.** The panel contains none, so it says nothing about entry-level
    tech hiring, arguably the segment people most want to understand.
 

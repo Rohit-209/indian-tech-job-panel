@@ -124,8 +124,9 @@ table is replaced in full on every run, so it always reflects exactly one dictio
 | `title_family`, `seniority` | text | Gemini's answer, constrained to the vocabularies below. |
 | `company`, `title_raw`, `created_at` | | |
 
-Used only if `TITLE_METHOD=llm`. Until the hand-label evaluation (`python -m extraction.titles
---evaluate`) shows Gemini beats the rules, `postings` uses the rules classifier.
+Used only if `TITLE_METHOD=llm`. The 2026-10-20 evaluation (`python -m extraction.titles
+--evaluate`, 150 dev labels) found no significant difference from the rules (McNemar p = 0.63), so
+`postings` uses the rules classifier.
 
 ### `run_log` — one row per collector run per source
 
@@ -173,7 +174,7 @@ director, intern}: full-time technical individual-contributor roles.
 | **Panel day 1 had two runs** | 5 postings have `closed_on` = `first_seen` = 2026-09-07 | A closure is taken as `max(closed_on, last_seen + 1)` |
 | **Greenhouse HTML in `description_raw`** | Raw text contains tags | `extraction.text.clean_text()` |
 | **Skill mention ≠ requirement** | "Partner with SRE teams" counts as `sre` | Documented limitation |
-| **Title classification is provisional** | Families from rules, pending hand-label evaluation | Rules and Gemini agree on 98% of in-scope decisions |
+| **Title classification checked in-sample only** | Rules 95% family / 90% both on 150 dev labels (Claude-drafted, human-reviewed); holdout pending | In-scope precision and recall 98% |
 | **Publish date can predate relisting** | A small share of postings appear long after their publish date | A2 `born` specification restricts to postings first seen within 1 day of publishing |
 | **Salary is almost never disclosed** | 22 postings with India pay, all one employer | See `report/A4_disclosure.md` |
 
