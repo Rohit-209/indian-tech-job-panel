@@ -1,0 +1,20 @@
+Indian Tech Job Panel — dataset
+Copyright (c) 2026 Rohit Raj
+
+The dataset release (postings.csv.gz, observations.csv.gz, posting_skills.csv.gz,
+MANIFEST.json) and DATA_DICTIONARY.md are licensed under the Creative Commons
+Attribution 4.0 International licence (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+You may share and adapt the data for any purpose, including commercially, as
+long as you give appropriate credit, link to the licence, and say if you
+changed it. Suggested credit:
+
+  Rohit Raj (2026). Indian Tech Job Panel.
+  https://github.com/Rohit-209/indian-tech-job-panel
+
+Scope. The licence covers the compilation and the fields derived from it
+(dates, classifications, skills, salary and geography fields). It does not
+cover the job postings themselves: the titles and URLs identify postings that
+belong to the employers who published them, and description text is not part
+of the release. The code is licensed separately (MIT, see LICENSE).

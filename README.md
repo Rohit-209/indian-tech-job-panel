@@ -121,9 +121,12 @@ report/         # findings.md + figures
 data/           # tokens.yaml (public) + tokens.private.yaml (gitignored)
 ```
 
-## Data licence
+## Licence
 
-_Full licence published with the dataset release in week 12._ The intent is CC-BY-4.0 for the aggregated dataset and dictionary; the raw scraped payloads are covered by the ATS providers' own terms and are not part of the release.
+- **Code:** [MIT](LICENSE).
+- **Data:** [CC BY 4.0](LICENSE-DATA), covering the released tables and `DATA_DICTIONARY.md`. The
+  release has the derived tables and each posting's URL (`python -m tools.export_release`). Job
+  description text and raw ATS payloads are withheld: that text belongs to the employers.
 
 ## Contact
 
