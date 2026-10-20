@@ -1,0 +1,190 @@
+{
+  "n": 588,
+  "cities": {
+    "Bengaluru": 394,
+    "NCR": 114,
+    "none": 65,
+    "Mumbai": 14,
+    "Hyderabad": 1
+  },
+  "concentration": {
+    "all": {
+      "Bengaluru": {
+        "n": 394,
+        "hhi": 2861,
+        "top_employer": "Okta",
+        "top_share": 0.477
+      },
+      "NCR": {
+        "n": 114,
+        "hhi": 6542,
+        "top_employer": "Mongodb",
+        "top_share": 0.798
+      }
+    },
+    "in_scope": {
+      "Bengaluru": {
+        "n": 206,
+        "hhi": 4799,
+        "top_employer": "Okta",
+        "top_share": 0.665
+      },
+      "NCR": {
+        "n": 43,
+        "hhi": 8269,
+        "top_employer": "Mongodb",
+        "top_share": 0.907
+      }
+    }
+  },
+  "specialisation": {
+    "all": {
+      "location_quotients": {
+        "Bengaluru": {
+          "data_ml": 1.11,
+          "infra": 1.16,
+          "non_tech": 0.84,
+          "other_tech": 1.19,
+          "product_design": 1.13,
+          "software_eng": 1.06,
+          "solutions": 0.95
+        },
+        "NCR": {
+          "data_ml": 0.61,
+          "infra": 0.46,
+          "non_tech": 1.56,
+          "other_tech": 0.34,
+          "product_design": 0.56,
+          "software_eng": 0.78,
+          "solutions": 1.17
+        }
+      },
+      "pooled": {
+        "chi2": 25.32,
+        "df": 6,
+        "p": 0.0003
+      },
+      "within_employer": {
+        "chi2": 25.32,
+        "p_perm": 0.1914,
+        "employers_in_both_cities": [
+          "Airbnb",
+          "Datadog",
+          "Elastic",
+          "Mongodb",
+          "Okta",
+          "Openai"
+        ],
+        "n_informative": 371
+      }
+    },
+    "in_scope": {
+      "location_quotients": {
+        "Bengaluru": {
+          "data_ml": 1.04,
+          "infra": 1.07,
+          "other_tech": 1.11,
+          "software_eng": 0.97
+        },
+        "NCR": {
+          "data_ml": 0.83,
+          "infra": 0.66,
+          "other_tech": 0.48,
+          "software_eng": 1.13
+        }
+      },
+      "pooled": {
+        "chi2": 2.31,
+        "df": 3,
+        "p": 0.5108
+      },
+      "within_employer": {
+        "chi2": 2.31,
+        "p_perm": 0.7841,
+        "employers_in_both_cities": [
+          "Airbnb",
+          "Mongodb"
+        ],
+        "n_informative": 52
+      }
+    }
+  },
+  "remote": {
+    "pooled": {
+      "data_ml": {
+        "remote": 11,
+        "n": 19,
+        "share": 0.579,
+        "ci": [
+          0.363,
+          0.769
+        ]
+      },
+      "infra": {
+        "remote": 10,
+        "n": 29,
+        "share": 0.345,
+        "ci": [
+          0.199,
+          0.527
+        ]
+      },
+      "non_tech": {
+        "remote": 32,
+        "n": 115,
+        "share": 0.278,
+        "ci": [
+          0.205,
+          0.366
+        ]
+      },
+      "other_tech": {
+        "remote": 4,
+        "n": 10,
+        "share": 0.4,
+        "ci": [
+          0.168,
+          0.687
+        ]
+      },
+      "product_design": {
+        "remote": 3,
+        "n": 13,
+        "share": 0.231,
+        "ci": [
+          0.082,
+          0.503
+        ]
+      },
+      "software_eng": {
+        "remote": 57,
+        "n": 157,
+        "share": 0.363,
+        "ci": [
+          0.292,
+          0.441
+        ]
+      },
+      "solutions": {
+        "remote": 16,
+        "n": 46,
+        "share": 0.348,
+        "ci": [
+          0.227,
+          0.492
+        ]
+      }
+    },
+    "by_employer": {
+      "Airbnb": 0.414,
+      "Cloudflare": 1.0,
+      "Datadog": 0.0,
+      "Deepgram": 1.0,
+      "Gitlab": 1.0,
+      "Mongodb": 0.05,
+      "Okta": 0.009,
+      "Openai": 0.4,
+      "Twilio": 1.0
+    }
+  }
+}

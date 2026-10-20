@@ -29,8 +29,12 @@ is produced by code in [`analysis/`](../analysis) from the dataset described in 
    postings show an India pay range (95% CI 2.5–5.6%), all from one employer. Even there,
    engineering roles withhold pay far more often than other roles (3 of 9 disclose, against 19 of
    20; Fisher p = 0.001).
+6. **Cities look specialised only because each city is mostly one employer.** NCR over-indexes on
+   non-technical roles (p = 0.0003 pooled), but 80% of its postings are MongoDB's. Comparing within
+   employers leaves no city difference (p = 0.19), and remote work is likewise set per employer
+   (100% at GitLab and Twilio, 1% at Okta).
 
-The thread running through all five: in this market sample, **the employer is the strongest
+The thread running through all six: in this market sample, **the employer is the strongest
 signal in the data**, and any analysis that doesn't condition on it reports employer composition
 as if it were a fact about roles.
 
@@ -224,6 +228,25 @@ comparison possible. Nothing in this panel says anything about pay *levels* outs
 bands.
 
 [Full A4 write-up →](A4_disclosure.md)
+
+---
+
+## A6 — Is the market geographically specialised? *(short form)*
+
+**Question.** Do cities hire for different things, or are they scaled copies of each other?
+
+**Approach.** Only Bengaluru (394) and NCR (114) have enough postings. Herfindahl concentration of
+employers per city; location quotients and a city × family χ², pooled and with city shuffled
+within employer ([details](A6_geography.md)).
+
+**Result. City is a stand-in for employer.** Pooled, NCR over-indexes on non-technical roles
+(LQ 1.56) and under-indexes on infrastructure (0.46), and the difference is significant
+(p = 0.0003). But 80% of NCR postings are MongoDB's (HHI 6,542), and comparing within employers
+leaves nothing (p = 0.19; technical roles p = 0.78). Remote work is an employer policy too: 100%
+of GitLab's and Twilio's India postings, 1% of Okta's.
+
+**What would change my mind.** A panel sampled to cover cities, with more than the two employers
+that hire technical roles in both. Here that is a design point for a next panel, not a fix.
 
 ---
 
